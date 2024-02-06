@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sol y Sierras Hotel</title>
+
+    <!-- boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- boostrap iconos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <!------------------------HEADER------------------------>
+        <header class="row">
+            <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+                <img class="logo" src="../assets/logo.png" alt="logo">
+                <p class="color-titulo-nav">Hotel <br> Sol y Sierras</p>
+                <button class="navbar-toggler nav-boton" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav color-text-nav nav-underline">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./habitaciones.html">Habitaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./tarifas.html">Tarifas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!------------------------MAIN------------------------>
+        <main class="row padding">
+            <!--formulario de reserva-->
+
+            <section class="reservar">
+                <h2>¡Consulte por su reserva aquí!</h2>
+                <form action="form.php" method="POST">
+                    <div class="reservar__flex">
+                        <label for="">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Ej: info@solysierrashotel.com">
+                    </div>
+                    <!--opciones de habitaciones-->
+                    <div class="reservar__flex">
+                        <label for="">Habitacion:</label>
+                        <select name="" id="">
+                            <option selected="" disabled>Seleccione una Habitacion</option>
+                            <option value="">Estandar</option>
+                            <option value="">Superior</option>
+                            <option value="">Deluxe</option>
+                        </select>
+                    </div>
+                    <!-- Fecha de ingreso -->
+                    <div class="reservar__flex">
+                        <label for="fecha_ingreso">Fecha de Ingreso:</label>
+                        <input type="date" id="" name="fecha_ingreso">
+                    </div>
+                    <!-- Fecha de Egreso -->
+                    <div class="reservar__flex">
+                        <label for="fecha_egreso">Fecha de Egreso:</label>
+                        <input type="date" id="" name="fecha_egreso">
+                    </div>
+                    <!--numero de pasajeros-->
+                    <div class="reservar__flex">
+                        <label for="">Pasajeros</label>
+                        <input type="number" name="" id="" min="1" max="10">
+                    </div>
+                    <!--enviar-->
+                    <div class="reservar__enviar">
+                        <input type="submit" value="Enviar Consulta">
+                    </div>
+                </form>
+            </section>
+
+
+            <section class="container-fluid habitaciones">
+
+                <h1 class="titulo">HABITACIONES</h1>
+
+                <article class="row">
+                    <p>Estandar</p>
+                    <div class="habitaciones-imagen col-sm-12 col-md-6">
+                        <img src="../assets/habitacion estandar.jpg" alt="Habitacion Estandar">
+                    </div>
+                    <div class="col-sm-12 col-md-6 habitaciones-lista">
+                        <ul>
+                            <li><i class="bi bi-check-square"></i>Baño privado</li>
+                            <li><i class="bi bi-check-square"></i>Servicio a la habitacion</li>
+                            <li><i class="bi bi-check-square"></i>Telefono</li>
+                            <li><i class="bi bi-check-square"></i>Calefacción </li>
+                            <li><i class="bi bi-check-square"></i>Aire acondicionado</li>
+                            <li><i class="bi bi-check-square"></i>Wifi</li>
+                            <li><i class="bi bi-check-square"></i>Secador de cabello</li>
+                            <li><i class="bi bi-check-square"></i>Tv</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="row">
+                    <p>Superior</p>
+                    <div class="habitaciones-imagen col-sm-12 col-md-6">
+                        <img src="../assets/habitacion superior.jpg" alt="Habitacion Superior">
+                    </div>
+                    <div class="col-sm-12 col-md-6 habitaciones-lista">
+                        <ul>
+                            <li><i class="bi bi-check-square"></i>Baño privado</li>
+                            <li><i class="bi bi-check-square"></i>Servicio a la habitacion</li>
+                            <li><i class="bi bi-check-square"></i>Telefono</li>
+                            <li><i class="bi bi-check-square"></i>Calefacción </li>
+                            <li><i class="bi bi-check-square"></i>Aire acondicionado</li>
+                            <li><i class="bi bi-check-square"></i>Wifi</li>
+                            <li><i class="bi bi-check-square"></i>Secador de cabello</li>
+                            <li><i class="bi bi-check-square"></i>Tv</li>
+                            <li><i class="bi bi-check-square"></i>Bañera de hidromasaje</li>
+                            <li><i class="bi bi-check-square"></i>Frigobar</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="row">
+                    <p>Deluxe</p>
+                    <div class="habitaciones-imagen col-sm-12 col-md-6">
+                        <img src="../assets/habitacion deluxe2.jpg" alt="Habitacion Deluxe">
+                    </div>
+                    <div class="col-sm-12 col-md-6 habitaciones-lista">
+                        <ul>
+                            <li><i class="bi bi-check-square"></i>Baño privado</li>
+                            <li><i class="bi bi-check-square"></i>Servicio a la habitacion</li>
+                            <li><i class="bi bi-check-square"></i>Telefono</li>
+                            <li><i class="bi bi-check-square"></i>Calefacción </li>
+                            <li><i class="bi bi-check-square"></i>Aire acondicionado</li>
+                            <li><i class="bi bi-check-square"></i>Wifi</li>
+                            <li><i class="bi bi-check-square"></i>Secador de cabello</li>
+                            <li><i class="bi bi-check-square"></i>Tv</li>
+                            <li><i class="bi bi-check-square"></i>Bañera de hidromasaje</li>
+                            <li><i class="bi bi-check-square"></i>Frigobar</li>
+                            <li><i class="bi bi-check-square"></i>Zona de estar con sofá </li>
+                            <li><i class="bi bi-check-square"></i>Escritorio de trabajo</li>
+                            <li><i class="bi bi-check-square"></i>Balcón</li>
+                        </ul>
+                    </div>
+                </article>
+
+            </section>
+
+        </main>
+
+        <!------------------------FOOTER------------------------>
+        <footer class="row align-items-baseline text-center">
+
+            <section class="col-sm-12 col-md-4 hotel-info">
+                <h5>Hotel 4 estrellas </h5>
+                <p class="hotel-info-estrellas">&#9733;&#9733;&#9733;&#9733;</p> <!-- Caracteres de estrellas-->
+            </section>
+            <section class="col-sm-12 col-md-4 direccion">
+                <p>Av. del Sol N°678, Merlo San Luis, argentina</p>
+                <img class="logo" src="../assets/logo.png" alt="logo">
+            </section>
+
+            <section class="col-sm-12 col-md-4 hotel-info">
+                <h5>Seguinos en nuestras redes</h5>
+
+                <!-- iconos de las redes sociales -->
+                <div class="redes-sociales">
+                    <a target="_blank" href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                </div>
+                <p class="hotel-info-creador">Creado por Brian</p>
+            </section>
+        </footer>
+    </div>
+
+    <!-- boostrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
