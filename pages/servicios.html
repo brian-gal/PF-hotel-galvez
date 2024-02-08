@@ -23,15 +23,18 @@
     <header>
         <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
             <div class="container-fluid">
+
                 <img class="logo" src="../assets/logo.png" alt="logo">
                 <p class="color-titulo-nav">Hotel <br> Sol y Sierras</p>
-                <button class="navbar-toggler nav-boton" type="button" data-bs-toggle="collapse"
+
+                <button class="navbar-toggler icon-nav" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="icon-nav-boton"><i class="bi bi-list"></i></span>
                 </button>
+
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav color-text-nav nav-underline">
+                    <ul class="navbar-nav nav-underline texto-nav">
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="../index.html">Home</a>
                         </li>
@@ -55,58 +58,84 @@
 
     <!-- PRINCIPAL-->
     <main class="padding">
-        <h1 class="titulo">SERVICIOS</h1>
-        <section class="servicios">
-            <ul>
-                <li>Desayuno</li>
-                <li>Desayuno para celíacos</li>
-                <li>Servicio de Mucama Diario</li>
-                <li>Ropa Blanca</li>
-                <li>Piscina exterior y piscina climatizada</li>
-                <li>Asesoramiento turístico y gastronómico</li>
-                <li>Gym</li>
-                <li>Wifi</li>
-                <li>Recepción las 24 hs</li>
-                <li>Confitería y bar</li>
-                <li>Sala de juegos</li>
-                <li>Cochera.</li>
-            </ul>
 
-            <img src="../assets/desayuno.jpg" alt="Desayuno en hotel Sol y Sierras">
-            <img src="../assets/piscina.jpg" alt="Piscina en Hotel Sol y Sierras">
-        </section>
+        <div class="titulo">
+            <h1>SERVICIOS</h1>
+        </div>
 
-        <section class="servicios-ayuda">
-            <p><em>Cualquier duda comunicarse por alguno de los medios de contacto y responderemos a la brevedad</em>
-            </p>
-            <a href="./contacto.html">Hacer una consulta</a>
-        </section>
+        <div class="container-fluid">
+            <section class="row">
+                <div class="col-sm-12 col-md-6 servicios-lista">
+
+                    <h2>Instalaciones:</h2>
+                    <ul>
+                        <li>Desayuno</li>
+                        <li>Desayuno para celíacos</li>
+                        <li>Servicio de Mucama Diario</li>
+                        <li>Ropa Blanca</li>
+                        <li>Piscina exterior y piscina climatizada</li>
+                        <li>Gym</li>
+                        <li>Wifi</li>
+                        <li>Recepción las 24 hs</li>
+                        <li>Cochera</li>
+                    </ul>
+
+                    <h2>Servicios Adicionales:</h2>
+                    <ul>
+                        <li>Asesoramiento turístico y gastronómico</li>
+                        <li>Confitería y bar</li>
+                        <li>Sala de juegos</li>
+                        <li>Spa y masajes</li>
+                        <li>Servicio de traslado al aeropuerto</li>
+                        <li>Organización de eventos y reuniones</li>
+                        <li>Servicio de lavandería express</li>
+                        <li>Alquiler de bicicletas de montaña</li>
+                        <li>Servicio de guardería infantil</li>
+                        <li>Noches temáticas y espectáculos en vivo</li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-6 servicios-imagen">
+                    <img src="../assets/desayuno.jpg" alt="Desayuno en hotel Sol y Sierras">
+                    <img src="../assets/piscina.jpg" alt="Piscina en Hotel Sol y Sierras">
+                </div>
+            </section>
+
+            <section class="row servicios-ayuda">
+                <p>Cualquier duda comunicarse por alguno de los medios de contacto y responderemos a la
+                    brevedad
+                </p>
+                <div>
+                    <a class="boton-estilo" href="./contacto.html">Hacer una consulta</a>
+                </div>
+            </section>
+        </div>
     </main>
 
     <!------------------------FOOTER------------------------>
-    <footer>
-        <div class="container-fluid text-center">
-            <div class="row align-items-center">
-                <section class="col-sm-12 col-md-4 hotel-info">
-                    <h5>Hotel 4 estrellas </h5>
-                    <p class="hotel-info-estrellas">&#9733;&#9733;&#9733;&#9733;</p> <!-- Caracteres de estrellas-->
-                </section>
-                <section class="col-sm-12 col-md-4 direccion">
-                    <p>Av. del Sol N°678, Merlo San Luis, argentina</p>
-                    <img class="logo" src="../assets/logo.png" alt="logo">
-                </section>
 
-                <section class="col-sm-12 col-md-4 hotel-info">
-                    <h5>Seguinos en nuestras redes</h5>
+    <footer class="container-fluid">
+        <div class="row footer-fondo">
+            <section class="col-sm-12 col-md-4 hotel-info">
+                <h5>Hotel 4 estrellas </h5>
+                <p class="hotel-info-estrellas">&#9733;&#9733;&#9733;&#9733;</p> <!-- Caracteres de estrellas-->
+            </section>
+            <section class="col-sm-12 col-md-4 direccion">
+                <p>Av. del Sol N°678, Merlo San Luis, argentina</p>
+                <img class="logo" src="../assets/logo.png" alt="logo">
+            </section>
 
-                    <!-- iconos de las redes sociales -->
-                    <div class="redes-sociales">
-                        <a target="_blank" href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
-                        <a target="_blank" href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
-                    </div>
-                    <p class="hotel-info-creador">Creado por Brian</p>
-                </section>
-            </div>
+            <section class="col-sm-12 col-md-4 hotel-info">
+                <h5>Seguinos en nuestras redes</h5>
+
+                <!-- iconos de las redes sociales -->
+                <div class="redes-sociales">
+                    <a target="_blank" href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                </div>
+            </section>
+        </div>
+        <div class="row hotel-info-creador">
+            <p>Creado por Galvez</p>
         </div>
     </footer>
 

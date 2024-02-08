@@ -23,15 +23,18 @@
     <header>
         <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
             <div class="container-fluid">
+
                 <img class="logo" src="../assets/logo.png" alt="logo">
                 <p class="color-titulo-nav">Hotel <br> Sol y Sierras</p>
-                <button class="navbar-toggler nav-boton" type="button" data-bs-toggle="collapse"
+
+                <button class="navbar-toggler icon-nav" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="icon-nav-boton"><i class="bi bi-list"></i></span>
                 </button>
+
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav color-text-nav nav-underline">
+                    <ul class="navbar-nav nav-underline texto-nav">
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="../index.html">Home</a>
                         </li>
@@ -55,7 +58,9 @@
 
     <!-- PRINCIPAL-->
     <main class="padding">
-        <h1 class="titulo">CONTACTO Y UBICACION</h1>
+        <div class="titulo">
+            <h1>CONTACTO Y UBICACION</h1>
+        </div>
         <section class="info-contacto">
             <div>
                 <p>Tel:<a href="tel: 02656473647">02656-473647</a></p>
@@ -88,29 +93,30 @@
     </main>
 
     <!------------------------FOOTER------------------------>
-    <footer>
-        <div class="container-fluid text-center">
-            <div class="row align-items-center">
-                <section class="col-sm-12 col-md-4 hotel-info">
-                    <h5>Hotel 4 estrellas </h5>
-                    <p class="hotel-info-estrellas">&#9733;&#9733;&#9733;&#9733;</p> <!-- Caracteres de estrellas-->
-                </section>
-                <section class="col-sm-12 col-md-4 direccion">
-                    <p>Av. del Sol N°678, Merlo San Luis, argentina</p>
-                    <img class="logo" src="../assets/logo.png" alt="logo">
-                </section>
 
-                <section class="col-sm-12 col-md-4 hotel-info">
-                    <h5>Seguinos en nuestras redes</h5>
+    <footer class="container-fluid">
+        <div class="row footer-fondo">
+            <section class="col-sm-12 col-md-4 hotel-info">
+                <h5>Hotel 4 estrellas </h5>
+                <p class="hotel-info-estrellas">&#9733;&#9733;&#9733;&#9733;</p> <!-- Caracteres de estrellas-->
+            </section>
+            <section class="col-sm-12 col-md-4 direccion">
+                <p>Av. del Sol N°678, Merlo San Luis, argentina</p>
+                <img class="logo" src="../assets/logo.png" alt="logo">
+            </section>
 
-                    <!-- iconos de las redes sociales -->
-                    <div class="redes-sociales">
-                        <a target="_blank" href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
-                        <a target="_blank" href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
-                    </div>
-                    <p class="hotel-info-creador">Creado por Brian</p>
-                </section>
-            </div>
+            <section class="col-sm-12 col-md-4 hotel-info">
+                <h5>Seguinos en nuestras redes</h5>
+
+                <!-- iconos de las redes sociales -->
+                <div class="redes-sociales">
+                    <a target="_blank" href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                </div>
+            </section>
+        </div>
+        <div class="row hotel-info-creador">
+            <p>Creado por Galvez</p>
         </div>
     </footer>
 

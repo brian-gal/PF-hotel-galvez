@@ -4,18 +4,26 @@
     padding: 0;
 }
 
+body {
+    background-color: #B5A88A;
+}
+
 /*----------------------HEADER----------------------*/
+
+/* fija el header y le da prioridad sobre todo */
 header {
     position: sticky;
     top: 0;
     z-index: 10;
-    background-color: #202030;
+    background-color: #000000;
 }
 
+/* le da tamaño al logo */
 .logo {
     width: 120px;
 }
 
+/* le da estilo al nombre al lado del logo */
 .color-titulo-nav {
     color: #db7734;
     margin-bottom: 0;
@@ -23,27 +31,29 @@ header {
     font-size: 20px;
 }
 
-.color-text-nav li a {
-    color: #ffffff;
+.texto-nav li a {
     font-size: 20px;
 }
 
-/* que no tenga borte el menu minimizado */
-.nav-boton {
-    border: none;
+.icon-nav {
+    background-color: #fff;
+}
+
+.icon-nav-boton {
+    color: #000000;
+    font-size: 30px;
 }
 
 /*----------------------MAIN----------------------*/
 
 main {
-    background-color: #635C51;
-    padding-bottom: 40px;
+    background-color: #fff;
+    padding-bottom: 20px;
 }
 
-/* le da un padding a todas las paginas menos index y cambia una propiedad de bs */
+/* le da un padding a todas las paginas menos index*/
 .padding {
-    padding: 20px 5%;
-    flex-shrink: 1;
+    padding: 10px 5% 20px;
 }
 
 .flecha:hover {
@@ -59,7 +69,7 @@ main {
 }
 
 
-/* restaura a 0 valores predeterminados de boostrap */
+/* restaura a 0 valores de boostrap con respecto al carrusel de fotos */
 .carousel-caption {
     left: 0;
     right: 0;
@@ -87,119 +97,150 @@ main {
 }
 
 /* le da estilo y tamaño adaptable al los botones de index */
-.botom-estilo {
-    padding: 1% 1%;
+.boton-estilo {
+    padding: 10px;
     font-size: clamp(15px, 3vw, 20px);
     text-decoration: none;
-    background-color: #39304A;
+    background-color: #808080;
     color: #ffffff;
     border-radius: 5px;
 }
 
-.botom-estilo:hover {
-    background-color: #f4f4f4;
-    color: #000000;
+.boton-estilo :hover {
+    background-color: #5a5a5a;
 }
 
 .introduccion-info {
-    padding: 30px 15%;
+    margin: 30px 100px 20px;
     text-align: center;
 }
 
 .introduccion-info p {
-    font-size: clamp(20px, 3vw, 25px) ;
-    color: #ffffff;
-    margin: 10px 0 30px;
+    font-size: clamp(20px, 3vw, 25px);
+    color: #0d0d0d;
+    margin-bottom: 30px;
 }
 
-/* formulario de reserva*/
+/* formulario de reserva de la pagina habitaciones*/
 .reservar {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
+    justify-content: center;
     text-align: center;
-    background-color: #ccc;
+    background-color: #B5A88A;
     border-radius: 10px;
-    width: 100%;
-    padding: 20px 0;
+    padding: 20px;
+}
+
+.centrar {
+    display: flex;
+    justify-content: center;
 }
 
 .reservar h2 {
     font-size: 24px;
     margin-bottom: 20px;
+    color: #000000;
 }
 
 .reservar form {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
-.reservar__flex {
+.reservar-flex {
     display: flex;
     flex-direction: column;
 }
 
+.reservar-flex label {
+    font-size: 20px;
+}
 
-.reservar input,
-.reservar select {
+.reservar-enviar input,
+.reservar-flex input,
+.reservar-flex select {
     margin: 5px;
     padding: 8px;
     border: none;
     border-radius: 5px;
-    width: 200px;
+    width: 250px;
 }
 
-.reservar__enviar {
+/* le da el mismo alto que un input */
+.reservar-flex select {
+    height: 100%;
+}
+
+/* acomoda el boton de enviar formulario de reserva*/
+.reservar-enviar {
     display: flex;
     flex-direction: column;
     justify-content: end;
 }
 
-.reservar input[type="submit"] {
-    background-color: #007bff;
+.reservar-enviar input {
+    background-color: #4a3f1b;
     color: white;
     font-weight: bold;
     cursor: pointer;
 }
 
-.reservar input[type="submit"]:hover {
-    background-color: #0056b3;
+.reservar-enviar input:hover {
+    background-color: #4a2c1b;
 }
 
+/* estilo a todos los h1 menos el del index */
+
+.titulo {
+    text-align: center;
+}
+
+.padding h1 {
+    display: inline-flex;
+    border-bottom: 3px solid #B5A88A;
+    margin-top: 10px;
+}
+
+
+/* acomoda como se ve la parte de habitaciones */
 .habitaciones {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: #ccc;
-    border-radius: 5px;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .habitaciones article {
     display: inline-flex;
     justify-content: center;
     border: 1px solid #868383;
+    background-color: #eeebe4;
     border-radius: 10px;
     margin: 1%;
     padding: 10px;
 }
 
-.habitaciones article p {
-    text-align: center;
-    font-size: clamp(20px, 3vw, 30px);
-}
+/* tamaño y estilo a las imagenes de la pagina habitaciones */
 
-/* estilo a todos los h1 menos el del index */
-.titulo {
-    text-align: center;
-    margin: 20px 0;
-    font-size: clamp(25px, 3vw, 50px);
+.habitaciones-imagen {
+    display: flex;
+    align-items: center;
+    max-width: 720px;
 }
 
 .habitaciones-imagen img {
     width: 100%;
-    margin-bottom: 20px;
     border-radius: 10px;
+}
+
+/* le da estilo a la listas de la pagina habitaciones */
+
+.habitaciones-lista p {
+    text-align: center;
+    font-size: 30px;
+    margin: 10px 0;
 }
 
 .habitaciones-lista ul li {
@@ -211,51 +252,134 @@ main {
     margin-right: 10px;
 }
 
+/* -----pagina de servicios---- */
+
+.servicios-lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.servicios-lista ul li {
+    font-size: 20px;
+}
+
+.servicios-imagen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicios-imagen img {
+    width: 300px;
+    margin: 20px;
+}
+
+.servicios-ayuda {
+    display: inline-flex;
+    text-align: center;
+    width: 100%;
+}
+
+.servicios-ayuda p {
+
+    font-size: 20px;
+    font-style: oblique;
+}
+
+/* le da estilo a la tabla de la pagina de tarifas */
+.tarifas {
+    justify-content: center;
+    gap: 30px;
+    padding: 0 20px 20px; 
+    margin: 20px;
+}
+
+.tarifas p{
+    font-size: 20px;
+    margin: 10px 0;
+   text-align: center;
+}
+
+.tarifas th, td {
+    border: 1px solid #333; 
+    padding: 8px; 
+    text-align: center; 
+}
+
+.tarifas th {
+    background-color: #f2f2f2;
+}
+
+.tarifas-info {
+    font-size: 18px;
+}
+
+.font-negrita {
+    font-weight: bold;
+}
+
 
 /*----------------------FOOTER----------------------*/
 
-/* le da estilo al footer */
 footer {
-    background-color: #1f232b;
+    text-align: center;
+    height: 100%;
+}
+
+.hotel-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-fondo {
+    background-color: #B5A88A;
+
     padding-top: 10px;
 }
 
 .hotel-info h5 {
-    color: #ffffff;
+    color: #0d0d0d;
     margin-bottom: 0;
 }
 
 /* le da color a las estrellas */
 .hotel-info-estrellas {
-    color: #ffff00;
+    color: #ec651c;
     font-size: 30px;
     margin-bottom: 0;
 }
 
 .direccion p {
-    color: #ffffff;
+    color: #0d0d0d;
     font-size: 20px;
     margin-bottom: 0;
 }
 
 /* le da estilo a la parte de iconos */
 .redes-sociales {
-    margin: 10px 0;
-}
-
-.redes-sociales a {
-    margin: 0.8rem;
+    margin-top: 10px;
 }
 
 .redes-sociales a i {
-    font-size: 25px;
+    font-size: 30px;
+    margin: 0.8rem;
+    color: #454545;
 }
 
+/* le da estilo al fondo y al parrafo de creador */
 .hotel-info-creador {
-    color: #ffff00;
-    font-size: 15px;
+    background-color: #B5A88A;
+    padding: 10px;
 }
 
+.hotel-info-creador p {
+    color: #9c0000;
+    font-size: 16px;
+    margin: 0;
+}
 
 /*----------------------media query---------------------- */
 
@@ -264,11 +388,31 @@ footer {
     .padding {
         padding: 20px 1%;
     }
+
     .habitaciones-lista {
         display: flex;
+        flex-direction: column;
         justify-content: center;
     }
+
+    /* achica el padding de los botones de index */
+    .botom-estilo a {
+        padding: 5px;
+    }
+
+    /* Cambia el orden de la clase direccion para que aparezca después de redes sociales*/
+    .direccion {
+        order: 3;
+    }
+
 }
 
 /* celular */
-@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 480px) {
+
+    /* saca los margenes del parrafo de la pagina index */
+    .introduccion-info {
+        margin: 30px 0 20px;
+    }
+
+}

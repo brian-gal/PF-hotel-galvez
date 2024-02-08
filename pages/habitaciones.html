@@ -18,20 +18,22 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <!------------------------HEADER------------------------>
+    <header>
+        <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+            <div class="container-fluid">
 
-        <!------------------------HEADER------------------------>
-        <header class="row">
-            <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
                 <img class="logo" src="../assets/logo.png" alt="logo">
                 <p class="color-titulo-nav">Hotel <br> Sol y Sierras</p>
-                <button class="navbar-toggler nav-boton" type="button" data-bs-toggle="collapse"
+
+                <button class="navbar-toggler icon-nav" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="icon-nav-boton"><i class="bi bi-list"></i></span>
                 </button>
+
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav color-text-nav nav-underline">
+                    <ul class="navbar-nav nav-underline texto-nav">
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="../index.html">Home</a>
                         </li>
@@ -49,23 +51,25 @@
                         </li>
                     </ul>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
+    </header>
 
-        <!------------------------MAIN------------------------>
-        <main class="row padding">
-            <!--formulario de reserva-->
+    <!------------------------MAIN------------------------>
+    <main class="padding">
 
+        <!--formulario de reserva-->
+        <div class="centrar">
             <section class="reservar">
                 <h2>¡Consulte por su reserva aquí!</h2>
                 <form action="form.php" method="POST">
-                    <div class="reservar__flex">
+                    <div class="reservar-flex">
                         <label for="">Email:</label>
                         <input type="email" name="email" id="email" placeholder="Ej: info@solysierrashotel.com">
                     </div>
                     <!--opciones de habitaciones-->
-                    <div class="reservar__flex">
-                        <label for="">Habitacion:</label>
+                    <div class="reservar-flex">
+                        <label for="">Habitaciones:</label>
                         <select name="" id="">
                             <option selected="" disabled>Seleccione una Habitacion</option>
                             <option value="">Estandar</option>
@@ -74,103 +78,110 @@
                         </select>
                     </div>
                     <!-- Fecha de ingreso -->
-                    <div class="reservar__flex">
+                    <div class="reservar-flex">
                         <label for="fecha_ingreso">Fecha de Ingreso:</label>
                         <input type="date" id="" name="fecha_ingreso">
                     </div>
                     <!-- Fecha de Egreso -->
-                    <div class="reservar__flex">
+                    <div class="reservar-flex">
                         <label for="fecha_egreso">Fecha de Egreso:</label>
                         <input type="date" id="" name="fecha_egreso">
                     </div>
                     <!--numero de pasajeros-->
-                    <div class="reservar__flex">
-                        <label for="">Pasajeros</label>
-                        <input type="number" name="" id="" min="1" max="10">
+                    <div class="reservar-flex">
+                        <label for="">Pasajeros:</label>
+                        <select name="" id="">
+                            <option selected="" disabled>Cantidad De Pasajeros</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                            <option value="">6</option>
+                        </select>
                     </div>
                     <!--enviar-->
-                    <div class="reservar__enviar">
+                    <div class="reservar-enviar">
                         <input type="submit" value="Enviar Consulta">
                     </div>
                 </form>
             </section>
+        </div>
 
-
-            <section class="container-fluid habitaciones">
-
-                <h1 class="titulo">HABITACIONES</h1>
-
-                <article class="row">
+        <div class="titulo">
+            <h1>HABITACIONES</h1>
+        </div>
+        <section class="container-fluid habitaciones">
+            <article class="row">
+                <div class="habitaciones-imagen col-sm-12 col-md-6">
+                    <img src="../assets/habitacion estandar.jpg" alt="Habitacion Estandar">
+                </div>
+                <div class="col-sm-12 col-md-6 habitaciones-lista">
                     <p>Estandar</p>
-                    <div class="habitaciones-imagen col-sm-12 col-md-6">
-                        <img src="../assets/habitacion estandar.jpg" alt="Habitacion Estandar">
-                    </div>
-                    <div class="col-sm-12 col-md-6 habitaciones-lista">
-                        <ul>
-                            <li><i class="bi bi-check-square"></i>Baño privado</li>
-                            <li><i class="bi bi-check-square"></i>Servicio a la habitacion</li>
-                            <li><i class="bi bi-check-square"></i>Telefono</li>
-                            <li><i class="bi bi-check-square"></i>Calefacción </li>
-                            <li><i class="bi bi-check-square"></i>Aire acondicionado</li>
-                            <li><i class="bi bi-check-square"></i>Wifi</li>
-                            <li><i class="bi bi-check-square"></i>Secador de cabello</li>
-                            <li><i class="bi bi-check-square"></i>Tv</li>
-                        </ul>
-                    </div>
-                </article>
+                    <ul>
+                        <li><i class="bi bi-check-square"></i>Baño privado</li>
+                        <li><i class="bi bi-check-square"></i>Servicio a la habitacion</li>
+                        <li><i class="bi bi-check-square"></i>Telefono</li>
+                        <li><i class="bi bi-check-square"></i>Calefacción </li>
+                        <li><i class="bi bi-check-square"></i>Aire acondicionado</li>
+                        <li><i class="bi bi-check-square"></i>Wifi</li>
+                        <li><i class="bi bi-check-square"></i>Secador de cabello</li>
+                        <li><i class="bi bi-check-square"></i>Tv</li>
+                    </ul>
+                </div>
+            </article>
 
-                <article class="row">
+            <article class="row">
+                <div class="habitaciones-imagen col-sm-12 col-md-6">
+                    <img src="../assets/habitacion superior.jpg" alt="Habitacion Superior">
+                </div>
+                <div class="col-sm-12 col-md-6 habitaciones-lista">
                     <p>Superior</p>
-                    <div class="habitaciones-imagen col-sm-12 col-md-6">
-                        <img src="../assets/habitacion superior.jpg" alt="Habitacion Superior">
-                    </div>
-                    <div class="col-sm-12 col-md-6 habitaciones-lista">
-                        <ul>
-                            <li><i class="bi bi-check-square"></i>Baño privado</li>
-                            <li><i class="bi bi-check-square"></i>Servicio a la habitacion</li>
-                            <li><i class="bi bi-check-square"></i>Telefono</li>
-                            <li><i class="bi bi-check-square"></i>Calefacción </li>
-                            <li><i class="bi bi-check-square"></i>Aire acondicionado</li>
-                            <li><i class="bi bi-check-square"></i>Wifi</li>
-                            <li><i class="bi bi-check-square"></i>Secador de cabello</li>
-                            <li><i class="bi bi-check-square"></i>Tv</li>
-                            <li><i class="bi bi-check-square"></i>Bañera de hidromasaje</li>
-                            <li><i class="bi bi-check-square"></i>Frigobar</li>
-                        </ul>
-                    </div>
-                </article>
+                    <ul>
+                        <li><i class="bi bi-check-square"></i>Baño privado</li>
+                        <li><i class="bi bi-check-square"></i>Servicio a la habitacion</li>
+                        <li><i class="bi bi-check-square"></i>Telefono</li>
+                        <li><i class="bi bi-check-square"></i>Calefacción </li>
+                        <li><i class="bi bi-check-square"></i>Aire acondicionado</li>
+                        <li><i class="bi bi-check-square"></i>Wifi</li>
+                        <li><i class="bi bi-check-square"></i>Secador de cabello</li>
+                        <li><i class="bi bi-check-square"></i>Tv</li>
+                        <li><i class="bi bi-check-square"></i>Bañera de hidromasaje</li>
+                        <li><i class="bi bi-check-square"></i>Frigobar</li>
+                    </ul>
+                </div>
+            </article>
 
-                <article class="row">
+            <article class="row">
+                <div class="habitaciones-imagen col-sm-12 col-md-6">
+                    <img src="../assets/habitacion deluxe.jpg" alt="Habitacion Deluxe">
+                </div>
+                <div class="col-sm-12 col-md-6 habitaciones-lista">
                     <p>Deluxe</p>
-                    <div class="habitaciones-imagen col-sm-12 col-md-6">
-                        <img src="../assets/habitacion deluxe2.jpg" alt="Habitacion Deluxe">
-                    </div>
-                    <div class="col-sm-12 col-md-6 habitaciones-lista">
-                        <ul>
-                            <li><i class="bi bi-check-square"></i>Baño privado</li>
-                            <li><i class="bi bi-check-square"></i>Servicio a la habitacion</li>
-                            <li><i class="bi bi-check-square"></i>Telefono</li>
-                            <li><i class="bi bi-check-square"></i>Calefacción </li>
-                            <li><i class="bi bi-check-square"></i>Aire acondicionado</li>
-                            <li><i class="bi bi-check-square"></i>Wifi</li>
-                            <li><i class="bi bi-check-square"></i>Secador de cabello</li>
-                            <li><i class="bi bi-check-square"></i>Tv</li>
-                            <li><i class="bi bi-check-square"></i>Bañera de hidromasaje</li>
-                            <li><i class="bi bi-check-square"></i>Frigobar</li>
-                            <li><i class="bi bi-check-square"></i>Zona de estar con sofá </li>
-                            <li><i class="bi bi-check-square"></i>Escritorio de trabajo</li>
-                            <li><i class="bi bi-check-square"></i>Balcón</li>
-                        </ul>
-                    </div>
-                </article>
+                    <ul>
+                        <li><i class="bi bi-check-square"></i>Baño privado</li>
+                        <li><i class="bi bi-check-square"></i>Servicio a la habitacion</li>
+                        <li><i class="bi bi-check-square"></i>Telefono</li>
+                        <li><i class="bi bi-check-square"></i>Calefacción </li>
+                        <li><i class="bi bi-check-square"></i>Aire acondicionado</li>
+                        <li><i class="bi bi-check-square"></i>Wifi</li>
+                        <li><i class="bi bi-check-square"></i>Secador de cabello</li>
+                        <li><i class="bi bi-check-square"></i>Tv</li>
+                        <li><i class="bi bi-check-square"></i>Bañera de hidromasaje</li>
+                        <li><i class="bi bi-check-square"></i>Frigobar</li>
+                        <li><i class="bi bi-check-square"></i>Zona de estar con sofá </li>
+                        <li><i class="bi bi-check-square"></i>Escritorio de trabajo</li>
+                        <li><i class="bi bi-check-square"></i>Balcón</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+    </main>
 
-            </section>
+    <!------------------------FOOTER------------------------>
 
-        </main>
-
-        <!------------------------FOOTER------------------------>
-        <footer class="row align-items-baseline text-center">
-
+    <footer class="container-fluid">
+        <div class="row footer-fondo">
             <section class="col-sm-12 col-md-4 hotel-info">
                 <h5>Hotel 4 estrellas </h5>
                 <p class="hotel-info-estrellas">&#9733;&#9733;&#9733;&#9733;</p> <!-- Caracteres de estrellas-->
@@ -188,10 +199,13 @@
                     <a target="_blank" href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
                     <a target="_blank" href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
                 </div>
-                <p class="hotel-info-creador">Creado por Brian</p>
             </section>
-        </footer>
-    </div>
+        </div>
+        <div class="row hotel-info-creador">
+            <p>Creado por Galvez</p>
+        </div>
+    </footer>
+
 
     <!-- boostrap script -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
