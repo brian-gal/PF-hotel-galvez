@@ -4,6 +4,7 @@
     padding: 0;
 }
 
+/* le da color al body en caso de que la informacion no llene el alto completo de la pagina */
 body {
     background-color: #B5A88A;
 }
@@ -15,30 +16,41 @@ header {
     position: sticky;
     top: 0;
     z-index: 10;
-    background-color: #000000;
+    background-color: #B5A88A;
 }
 
 /* le da tamaño al logo */
 .logo {
     width: 120px;
+    margin-right: 10px;
 }
 
 /* le da estilo al nombre al lado del logo */
 .color-titulo-nav {
-    color: #db7734;
+    color: #4f3c09;
     margin-bottom: 0;
     text-align: center;
     font-size: 20px;
 }
 
+/* le da estilo a los enlaces del nav */
 .texto-nav li a {
     font-size: 20px;
+    color: #000000;
 }
 
+/* le da estilo a los enlaces del nav al pasar el cursor por  encima*/
+.texto-nav li a:hover {
+    color: #4f3c09;
+}
+
+
+/* fondo al icono hamburguesa del nav mobile*/
 .icon-nav {
     background-color: #fff;
 }
 
+/* color y tamaño al icono hamburguesa del nav mobile*/
 .icon-nav-boton {
     color: #000000;
     font-size: 30px;
@@ -53,21 +65,22 @@ main {
 
 /* le da un padding a todas las paginas menos index*/
 .padding {
-    padding: 10px 5% 20px;
+    padding: 10px 5% 30px;
 }
 
+/* leda estilo a las flichitas que cambian la foto en index */
+.flecha-portada {
+    background-color: #0000006e;
+    border-radius: 15px;
+}
+
+/* al pasar el cursor sobre el padre ya se activa un estilo sobre el hijo */
 .flecha:hover {
     .flecha-portada {
         background-color: #000000d8;
         border-radius: 15px;
     }
 }
-
-.flecha-portada {
-    background-color: #0000006e;
-    border-radius: 15px;
-}
-
 
 /* restaura a 0 valores de boostrap con respecto al carrusel de fotos */
 .carousel-caption {
@@ -79,10 +92,10 @@ main {
 
 .portada-info {
     background-color: #000000b7;
-    padding: 1% 2%;
+    padding: 1%;
 }
 
-/* le da un tamaño de letra adaptable los tutilos y parrafos que entan sobre la foto */
+/* le da un tamaño de letra adaptable a los titulos y parrafos que entran sobre la foto */
 .portada-info h1 {
     font-size: clamp(15px, 3vw, 65px);
 }
@@ -96,22 +109,23 @@ main {
     margin: 8px;
 }
 
-/* le da estilo y tamaño adaptable al los botones de index */
+/* le da estilo y tamaño adaptable a los dos botones de index y al boton de servicios*/
 .boton-estilo {
-    padding: 10px;
+    padding: 8px;
     font-size: clamp(15px, 3vw, 20px);
     text-decoration: none;
     background-color: #808080;
+    box-shadow: 4px 6px 10px 0em #494949;
     color: #ffffff;
     border-radius: 5px;
 }
 
-.boton-estilo :hover {
+.boton-estilo:hover {
     background-color: #5a5a5a;
 }
 
 .introduccion-info {
-    margin: 30px 100px 20px;
+    margin: 20px 100px 20px;
     text-align: center;
 }
 
@@ -121,7 +135,12 @@ main {
     margin-bottom: 30px;
 }
 
-/* formulario de reserva de la pagina habitaciones*/
+/* compensa el desplazamiento ya que al estar fijo el header queda encimado sino*/
+#habitaciones {
+    scroll-margin-top: 90px;
+}
+
+/* le da estilo al formulario de reserva de la pagina habitaciones y de contacto*/
 .reservar {
     display: inline-flex;
     flex-direction: column;
@@ -130,11 +149,7 @@ main {
     background-color: #B5A88A;
     border-radius: 10px;
     padding: 20px;
-}
-
-.centrar {
-    display: flex;
-    justify-content: center;
+    box-shadow: 7px 9px 7px 0em #615053;
 }
 
 .reservar h2 {
@@ -174,12 +189,13 @@ main {
 }
 
 /* acomoda el boton de enviar formulario de reserva*/
-.reservar-enviar {
+.reservar-enviar.flex {
     display: flex;
     flex-direction: column;
     justify-content: end;
 }
 
+/* le da estilo a el boton de formulario reserva y de contacto */
 .reservar-enviar input {
     background-color: #4a3f1b;
     color: white;
@@ -192,19 +208,18 @@ main {
 }
 
 /* estilo a todos los h1 menos el del index */
-
 .titulo {
     text-align: center;
 }
 
-.padding h1 {
+.titulo h1 {
     display: inline-flex;
     border-bottom: 3px solid #B5A88A;
     margin-top: 10px;
 }
 
 
-/* acomoda como se ve la parte de habitaciones */
+/* acomoda como se ve la parte de la pagina habitaciones */
 .habitaciones {
     display: flex;
     align-items: center;
@@ -212,6 +227,7 @@ main {
     margin: 10px 0;
 }
 
+/* le da un fondo al contenedor de las imagenes de las habitaciones */
 .habitaciones article {
     display: inline-flex;
     justify-content: center;
@@ -220,10 +236,10 @@ main {
     border-radius: 10px;
     margin: 1%;
     padding: 10px;
+    box-shadow: 7px 9px 7px 0em #615053;
 }
 
 /* tamaño y estilo a las imagenes de la pagina habitaciones */
-
 .habitaciones-imagen {
     display: flex;
     align-items: center;
@@ -236,7 +252,6 @@ main {
 }
 
 /* le da estilo a la listas de la pagina habitaciones */
-
 .habitaciones-lista p {
     text-align: center;
     font-size: 30px;
@@ -253,11 +268,7 @@ main {
 }
 
 /* -----pagina de servicios---- */
-
 .servicios-lista {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 20px;
 }
 
@@ -265,6 +276,7 @@ main {
     font-size: 20px;
 }
 
+.servicios-lista,
 .servicios-imagen {
     display: flex;
     flex-direction: column;
@@ -283,29 +295,32 @@ main {
 }
 
 .servicios-ayuda p {
-
     font-size: 20px;
     font-style: oblique;
 }
 
 /* le da estilo a la tabla de la pagina de tarifas */
 .tarifas {
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
     gap: 30px;
-    padding: 0 20px 20px; 
+    padding: 0 20px 20px;
     margin: 20px;
 }
 
-.tarifas p{
+.tarifas p {
     font-size: 20px;
     margin: 10px 0;
-   text-align: center;
+    text-align: center;
 }
 
-.tarifas th, td {
-    border: 1px solid #333; 
-    padding: 8px; 
-    text-align: center; 
+/* le da un estilo a las filas y un ancho para que midan lo mismo */
+.tarifas th,
+td {
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: center;
+    width: 33%;
 }
 
 .tarifas th {
@@ -320,24 +335,72 @@ main {
     font-weight: bold;
 }
 
+/* le da estilo a la pagina contactos */
+.direccion-maps {
+    text-align: center;
+    font-size: 20px;
+}
+
+.maps {
+    border: 2px solid #B5A88A;
+}
+
+.maps, .maps iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
+    max-width: 700px;
+}
+
+.contacto-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.contacto-info i {
+    font-size: 25px;
+    color: #4a3f1b;
+}
+
+.contacto-info a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #454545;
+    font-weight: normal;
+}
+
+.contacto-info a:hover {
+    color: #0000ff;
+}
+
+.contacto-formulario input,
+.contacto-formulario textarea {
+    margin: 5px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
 
 /*----------------------FOOTER----------------------*/
 
 footer {
     text-align: center;
     height: 100%;
+    background-color: #B5A88A;
+    padding-top: 10px;
 }
 
 .hotel-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.footer-fondo {
-    background-color: #B5A88A;
-
-    padding-top: 10px;
 }
 
 .hotel-info h5 {
@@ -355,7 +418,7 @@ footer {
 .direccion p {
     color: #0d0d0d;
     font-size: 20px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
 
 /* le da estilo a la parte de iconos */
@@ -366,17 +429,17 @@ footer {
 .redes-sociales a i {
     font-size: 30px;
     margin: 0.8rem;
-    color: #454545;
+    color: #3d46c4;
+    ;
 }
 
 /* le da estilo al fondo y al parrafo de creador */
 .hotel-info-creador {
-    background-color: #B5A88A;
     padding: 10px;
 }
 
 .hotel-info-creador p {
-    color: #9c0000;
+    color: #010f5c;
     font-size: 16px;
     margin: 0;
 }
@@ -385,8 +448,10 @@ footer {
 
 /* tablet */
 @media only screen and (max-width: 780px) {
+
+    /* achica el padding que le daba a todas las paginas menos a index */
     .padding {
-        padding: 20px 1%;
+        padding: 10px 1%;
     }
 
     .habitaciones-lista {
@@ -399,20 +464,25 @@ footer {
     .botom-estilo a {
         padding: 5px;
     }
-
-    /* Cambia el orden de la clase direccion para que aparezca después de redes sociales*/
-    .direccion {
-        order: 3;
-    }
-
+    
 }
 
 /* celular */
 @media only screen and (max-width: 480px) {
 
+    .boton-estilo {
+        padding: 5px;
+    }
+
     /* saca los margenes del parrafo de la pagina index */
     .introduccion-info {
         margin: 30px 0 20px;
+    }
+
+    /* Cambia el orden de la clase direccion para que aparezca después de redes sociales*/
+    .direccion {
+        order: 3;
+        margin-top: 10px;
     }
 
 }

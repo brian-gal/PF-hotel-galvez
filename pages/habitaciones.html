@@ -20,11 +20,11 @@
 <body>
     <!------------------------HEADER------------------------>
     <header>
-        <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
 
-                <img class="logo" src="../assets/logo.png" alt="logo">
-                <p class="color-titulo-nav">Hotel <br> Sol y Sierras</p>
+                <img class="logo" src="../assets/logo.webp" alt="logo">
+                <p class="color-titulo-nav font-negrita">Hotel <br> Sol y Sierras</p>
 
                 <button class="navbar-toggler icon-nav" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -59,62 +59,62 @@
     <main class="padding">
 
         <!--formulario de reserva-->
-        <div class="centrar">
-            <section class="reservar">
-                <h2>¡Consulte por su reserva aquí!</h2>
-                <form action="form.php" method="POST">
-                    <div class="reservar-flex">
-                        <label for="">Email:</label>
-                        <input type="email" name="email" id="email" placeholder="Ej: info@solysierrashotel.com">
-                    </div>
-                    <!--opciones de habitaciones-->
-                    <div class="reservar-flex">
-                        <label for="">Habitaciones:</label>
-                        <select name="" id="">
-                            <option selected="" disabled>Seleccione una Habitacion</option>
-                            <option value="">Estandar</option>
-                            <option value="">Superior</option>
-                            <option value="">Deluxe</option>
-                        </select>
-                    </div>
-                    <!-- Fecha de ingreso -->
-                    <div class="reservar-flex">
-                        <label for="fecha_ingreso">Fecha de Ingreso:</label>
-                        <input type="date" id="" name="fecha_ingreso">
-                    </div>
-                    <!-- Fecha de Egreso -->
-                    <div class="reservar-flex">
-                        <label for="fecha_egreso">Fecha de Egreso:</label>
-                        <input type="date" id="" name="fecha_egreso">
-                    </div>
-                    <!--numero de pasajeros-->
-                    <div class="reservar-flex">
-                        <label for="">Pasajeros:</label>
-                        <select name="" id="">
-                            <option selected="" disabled>Cantidad De Pasajeros</option>
-                            <option value="">1</option>
-                            <option value="">2</option>
-                            <option value="">3</option>
-                            <option value="">4</option>
-                            <option value="">5</option>
-                            <option value="">6</option>
-                        </select>
-                    </div>
-                    <!--enviar-->
-                    <div class="reservar-enviar">
-                        <input type="submit" value="Enviar Consulta">
-                    </div>
-                </form>
-            </section>
-        </div>
+
+        <section class="reservar">
+            <h2>¡Consulte por su reserva aquí!</h2>
+            <form action="form.php" method="POST">
+                <div class="reservar-flex">
+                    <label for="">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Ej: info@solysierrashotel.com">
+                </div>
+                <!--opciones de habitaciones-->
+                <div class="reservar-flex">
+                    <label for="">Habitaciones:</label>
+                    <select name="" id="">
+                        <option selected="" disabled>Seleccione una Habitacion</option>
+                        <option value="">Estandar</option>
+                        <option value="">Superior</option>
+                        <option value="">Deluxe</option>
+                    </select>
+                </div>
+                <!-- Fecha de ingreso -->
+                <div class="reservar-flex">
+                    <label for="fecha_ingreso">Fecha de Ingreso:</label>
+                    <input type="date" id="" name="fecha_ingreso">
+                </div>
+                <!-- Fecha de Egreso -->
+                <div class="reservar-flex">
+                    <label for="fecha_egreso">Fecha de Egreso:</label>
+                    <input type="date" id="" name="fecha_egreso">
+                </div>
+                <!--numero de pasajeros-->
+                <div class="reservar-flex">
+                    <label for="">Pasajeros:</label>
+                    <select name="" id="">
+                        <option selected="" disabled>Cantidad De Pasajeros</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                    </select>
+                </div>
+                <!--enviar-->
+                <div class="reservar-enviar flex">
+                    <input type="submit" value="Enviar Consulta">
+                </div>
+            </form>
+        </section>
 
         <div class="titulo">
-            <h1>HABITACIONES</h1>
+            <h1 id="habitaciones">HABITACIONES</h1>
         </div>
+
         <section class="container-fluid habitaciones">
             <article class="row">
                 <div class="habitaciones-imagen col-sm-12 col-md-6">
-                    <img src="../assets/habitacion estandar.jpg" alt="Habitacion Estandar">
+                    <img src="../assets/habitacion estandar.webp" alt="Habitacion Estandar">
                 </div>
                 <div class="col-sm-12 col-md-6 habitaciones-lista">
                     <p>Estandar</p>
@@ -133,7 +133,7 @@
 
             <article class="row">
                 <div class="habitaciones-imagen col-sm-12 col-md-6">
-                    <img src="../assets/habitacion superior.jpg" alt="Habitacion Superior">
+                    <img src="../assets/habitacion superior.webp" alt="Habitacion Superior">
                 </div>
                 <div class="col-sm-12 col-md-6 habitaciones-lista">
                     <p>Superior</p>
@@ -154,7 +154,7 @@
 
             <article class="row">
                 <div class="habitaciones-imagen col-sm-12 col-md-6">
-                    <img src="../assets/habitacion deluxe.jpg" alt="Habitacion Deluxe">
+                    <img src="../assets/habitacion deluxe.webp" alt="Habitacion Deluxe">
                 </div>
                 <div class="col-sm-12 col-md-6 habitaciones-lista">
                     <p>Deluxe</p>
@@ -188,7 +188,7 @@
             </section>
             <section class="col-sm-12 col-md-4 direccion">
                 <p>Av. del Sol N°678, Merlo San Luis, argentina</p>
-                <img class="logo" src="../assets/logo.png" alt="logo">
+                <img class="logo" src="../assets/logo.webp" alt="logo">
             </section>
 
             <section class="col-sm-12 col-md-4 hotel-info">
