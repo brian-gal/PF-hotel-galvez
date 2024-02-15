@@ -64,40 +64,40 @@
             <h2>¡Consulte por su reserva aquí!</h2>
             <form action="form.php" method="POST">
                 <div class="reservar-flex">
-                    <label for="">Email:</label>
-                    <input type="email" name="email" id="email" placeholder="Ej: info@solysierrashotel.com">
+                    <label for="reservas-email">Email:</label>
+                    <input type="email" name="reservas-email" id="reservas-email" placeholder="Ej: info@solysierrashotel.com">
                 </div>
                 <!--opciones de habitaciones-->
                 <div class="reservar-flex">
-                    <label for="">Habitaciones:</label>
-                    <select name="" id="">
-                        <option selected="" disabled>Seleccione una Habitacion</option>
-                        <option value="">Estandar</option>
-                        <option value="">Superior</option>
-                        <option value="">Deluxe</option>
+                    <label for="reservas-habitacion">Habitaciones:</label>
+                    <select name="reservas-habitacion" id="reservas-habitacion">
+                        <option selected disabled>Seleccione una Habitacion</option>
+                        <option value="estandar">Estandar</option>
+                        <option value="superior">Superior</option>
+                        <option value="deluxe">Deluxe</option>
                     </select>
                 </div>
                 <!-- Fecha de ingreso -->
                 <div class="reservar-flex">
-                    <label for="fecha_ingreso">Fecha de Ingreso:</label>
-                    <input type="date" id="" name="fecha_ingreso">
+                    <label for="reservas-fecha-ingreso">Fecha de Ingreso:</label>
+                    <input type="date" id="reservas-fecha-ingreso" name="reservas-fecha-ingreso">
                 </div>
                 <!-- Fecha de Egreso -->
                 <div class="reservar-flex">
-                    <label for="fecha_egreso">Fecha de Egreso:</label>
-                    <input type="date" id="" name="fecha_egreso">
+                    <label for="reservas-fecha-egreso">Fecha de Egreso:</label>
+                    <input type="date" id="reservas-fecha-egreso" name="reservas-fecha-egreso">
                 </div>
                 <!--numero de pasajeros-->
                 <div class="reservar-flex">
-                    <label for="">Pasajeros:</label>
-                    <select name="" id="">
-                        <option selected="" disabled>Cantidad De Pasajeros</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
-                        <option value="">6</option>
+                    <label for="reservas-pasajeros">Pasajeros:</label>
+                    <select name="reservas-pasajeros" id="reservas-pasajeros">
+                        <option selected disabled>Cantidad De Pasajeros</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
                     </select>
                 </div>
                 <!--enviar-->
@@ -106,6 +106,7 @@
                 </div>
             </form>
         </section>
+        
 
         <div class="titulo">
             <h1 id="habitaciones">HABITACIONES</h1>
@@ -114,7 +115,7 @@
         <section class="container-fluid habitaciones">
             <article class="row">
                 <div class="habitaciones-imagen col-sm-12 col-md-6">
-                    <img src="../assets/habitacion estandar.webp" alt="Habitacion Estandar">
+                    <img src="../assets/habitacion-estandar.webp" alt="Habitacion Estandar">
                 </div>
                 <div class="col-sm-12 col-md-6 habitaciones-lista">
                     <p>Estandar</p>
@@ -133,7 +134,7 @@
 
             <article class="row">
                 <div class="habitaciones-imagen col-sm-12 col-md-6">
-                    <img src="../assets/habitacion superior.webp" alt="Habitacion Superior">
+                    <img src="../assets/habitacion-superior.webp" alt="Habitacion Superior">
                 </div>
                 <div class="col-sm-12 col-md-6 habitaciones-lista">
                     <p>Superior</p>
@@ -154,7 +155,7 @@
 
             <article class="row">
                 <div class="habitaciones-imagen col-sm-12 col-md-6">
-                    <img src="../assets/habitacion deluxe.webp" alt="Habitacion Deluxe">
+                    <img src="../assets/habitacion-deluxe.webp" alt="Habitacion Deluxe">
                 </div>
                 <div class="col-sm-12 col-md-6 habitaciones-lista">
                     <p>Deluxe</p>
@@ -183,7 +184,7 @@
     <footer class="container-fluid">
         <div class="row footer-fondo">
             <section class="col-sm-12 col-md-4 hotel-info">
-                <h5>Hotel 4 estrellas </h5>
+                <p class="hotel-info-subtitulo">Hotel 4 estrellas </p>
                 <p class="hotel-info-estrellas">&#9733;&#9733;&#9733;&#9733;</p> <!-- Caracteres de estrellas-->
             </section>
             <section class="col-sm-12 col-md-4 direccion">
@@ -192,7 +193,7 @@
             </section>
 
             <section class="col-sm-12 col-md-4 hotel-info">
-                <h5>Seguinos en nuestras redes</h5>
+                <p class="hotel-info-subtitulo">Seguinos en nuestras redes</p>
 
                 <!-- iconos de las redes sociales -->
                 <div class="redes-sociales">

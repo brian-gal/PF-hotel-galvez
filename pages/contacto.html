@@ -84,19 +84,19 @@
 
 
                     <form class="reservar contacto-formulario" action="form.php" method="POST">
-                        <label for="">Nombre:</label>
-                        <input type="text" name="nombre" id="nombre" placeholder="Ej: brian">
-                        <label for="">Telefono:</label>
-                        <input type="tel" name="tel" id="tel" placeholder="Ej: 2665049030">
-                        <label for="">Email:</label>
-                        <input type="email" name="email" id="email" placeholder="Ej: info@solysierrashotel.com">
-                        <label for="">Mensaje:</label>
-                        <textarea name="" id="" cols="30" rows="10"
-                            placeholder="Escriba su consulta aqui..."></textarea>
+                        <label for="contacto-nombre">Nombre:</label>
+                        <input type="text" name="contacto-nombre" id="contacto-nombre" placeholder="Ej: brian">
+                        <label for="contacto-telefono">Telefono:</label>
+                        <input type="tel" name="contacto-telefono" id="contacto-telefono" placeholder="Ej: 2665049030">
+                        <label for="contacto-email">Email:</label>
+                        <input type="email" name="contacto-email" id="contacto-email" placeholder="Ej: info@solysierrashotel.com">
+                        <label for="contacto-mensaje">Mensaje:</label>
+                        <textarea name="contacto-mensaje" id="contacto-mensaje" cols="30" rows="10" placeholder="Escriba su consulta aquí..."></textarea>
                         <div class="reservar-enviar">
                             <input type="submit" value="Enviar Mensaje">
                         </div>
                     </form>
+                    
                 </section>
             </div>
         </div>
@@ -106,9 +106,9 @@
     <!------------------------FOOTER------------------------>
 
     <footer class="container-fluid">
-        <div class="row">
+        <div class="row footer-fondo">
             <section class="col-sm-12 col-md-4 hotel-info">
-                <h5>Hotel 4 estrellas </h5>
+                <p class="hotel-info-subtitulo">Hotel 4 estrellas </p>
                 <p class="hotel-info-estrellas">&#9733;&#9733;&#9733;&#9733;</p> <!-- Caracteres de estrellas-->
             </section>
             <section class="col-sm-12 col-md-4 direccion">
@@ -117,7 +117,7 @@
             </section>
 
             <section class="col-sm-12 col-md-4 hotel-info">
-                <h5>Seguinos en nuestras redes</h5>
+                <p class="hotel-info-subtitulo">Seguinos en nuestras redes</p>
 
                 <!-- iconos de las redes sociales -->
                 <div class="redes-sociales">

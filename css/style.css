@@ -403,14 +403,15 @@ footer {
     justify-content: center;
 }
 
-.hotel-info h5 {
+.hotel-info-subtitulo {
     color: #0d0d0d;
     margin-bottom: 0;
+    font-size: 20px;
 }
 
 /* le da color a las estrellas */
 .hotel-info-estrellas {
-    color: #ec651c;
+    color: #e07217;
     font-size: 30px;
     margin-bottom: 0;
 }
