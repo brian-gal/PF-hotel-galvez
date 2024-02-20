@@ -1,0 +1,9 @@
+// Reset
+@import './reset/reset';
+@import './reset/variables';
+@import './reset/mixin';
+
+//estructura
+@import 'header';
+@import 'main';
+@import 'footer';
