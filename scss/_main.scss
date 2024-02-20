@@ -1,0 +1,324 @@
+/*----------------------MAIN----------------------*/
+
+main {
+    background-color: #fff;
+    padding-bottom: 20px;
+}
+
+/* le da un padding a todas las paginas menos index*/
+.padding {
+    padding: 10px 5% 30px;
+}
+
+/* le da estilo a las flechas que cambian las fotos del index */
+.flecha {
+
+    span {
+        background-color: #0000006e;
+        border-radius: 15px;
+    }
+
+    &:hover {
+        .flecha-portada {
+            background-color: #000000d8;
+            border-radius: 15px;
+        }
+    }
+}
+
+.portada-info {
+    background-color: #000000b7;
+    padding: 1%;
+
+    h1 {
+        font-size: clamp(15px, 3vw, 65px);
+    }
+
+    h2 {
+        font-size: clamp(15px, 3vw, 65px);
+    }
+
+    p {
+        font-size: clamp(15px, 3vw, 45px);
+        margin: 8px;
+    }
+}
+
+/* le da estilo y tamaño adaptable a los dos botones de index y al boton de servicios*/
+.boton-estilo {
+    padding: 8px;
+    font-size: clamp(15px, 3vw, 20px);
+    text-decoration: none;
+    background-color: #808080;
+    box-shadow: 4px 6px 10px 0em #494949;
+    color: #ffffff;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: #5a5a5a;
+    }
+}
+
+.introduccion-info {
+    margin: 20px 100px 20px;
+    text-align: center;
+
+    p {
+        font-size: clamp(20px, 3vw, 25px);
+        color: #0d0d0d;
+        margin-bottom: 30px;
+    }
+}
+
+/* compensa el desplazamiento ya que al estar fijo el header queda encimado sino*/
+#habitaciones {
+    scroll-margin-top: 90px;
+}
+
+/* le da estilo al formulario de reserva de la pagina habitaciones y de contacto*/
+.reservar {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #B5A88A;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 7px 9px 7px 0em #615053;
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #000000;
+    }
+
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.reservar-flex {
+    display: flex;
+    flex-direction: column;
+
+    label {
+        font-size: 20px;
+    }
+
+    select {
+        height: 100%;
+    }
+}
+
+.reservar-enviar input,
+.reservar-flex input,
+.reservar-flex select {
+    margin: 5px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+}
+
+/* acomoda el boton de enviar formulario de reserva*/
+.reservar-enviar.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+/* le da estilo a el boton de formulario reserva y de contacto */
+.reservar-enviar input {
+    background-color: #4a3f1b;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #4a2c1b;
+    }
+}
+
+/* estilo a todos los h1 menos el del index */
+.titulo {
+    text-align: center;
+
+    h1 {
+        display: inline-flex;
+        border-bottom: 3px solid #B5A88A;
+        margin-top: 10px;
+    }
+}
+
+/* acomoda como se ve la parte de la pagina habitaciones */
+.habitaciones {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 0;
+
+    article {
+        display: inline-flex;
+        justify-content: center;
+        border: 1px solid #868383;
+        background-color: #eeebe4;
+        border-radius: 10px;
+        margin: 1%;
+        padding: 10px;
+        box-shadow: 7px 9px 7px 0em #615053;
+    }
+}
+
+/* tamaño y estilo a las imagenes de la pagina habitaciones */
+.habitaciones-imagen {
+    display: flex;
+    align-items: center;
+    max-width: 720px;
+
+    img {
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+
+/* le da estilo a la listas de la pagina habitaciones */
+.habitaciones-lista {
+    p {
+        text-align: center;
+        font-size: 30px;
+        margin: 10px 0;
+    }
+
+    ul li {
+        font-size: 25px;
+        list-style: none;
+
+        i {
+            margin-right: 10px;
+        }
+    }
+}
+
+/* -----pagina de servicios---- */
+.servicios-lista {
+    gap: 20px;
+
+    ul li {
+        font-size: 20px;
+    }
+}
+
+.servicios-lista,
+.servicios-imagen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicios-imagen img {
+    width: 300px;
+    margin: 20px;
+}
+
+.servicios-ayuda {
+    display: inline-flex;
+    text-align: center;
+    width: 100%;
+
+    p {
+        font-size: 20px;
+        font-style: oblique;
+    }
+}
+
+/* le da estilo a la tabla de la pagina de tarifas */
+.tarifas {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 20px 20px;
+    margin: 20px;
+
+    p {
+        font-size: 20px;
+        margin: 10px 0;
+        text-align: center;
+    }
+    
+}
+
+.tarifas th,
+td {
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: center;
+    width: 33%;
+}
+
+.tarifas th {
+    background-color: #f2f2f2;
+}
+
+.tarifas-info {
+    font-size: 18px;
+}
+
+.font-negrita {
+    font-weight: bold;
+}
+
+/* le da estilo a la pagina contactos */
+.direccion-maps {
+    text-align: center;
+    font-size: 20px;
+}
+
+.maps {
+    border: 2px solid #B5A88A;
+}
+
+.maps,
+.maps iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
+    max-width: 700px;
+}
+
+.contacto-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+
+    i {
+        font-size: 25px;
+        color: #4a3f1b;
+
+        a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #454545;
+            font-weight: normal;
+        
+            &:hover {
+                color: #0000ff;
+            }
+        }
+    }
+}
+
+.contacto-formulario input,
+.contacto-formulario textarea {
+    margin: 5px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}

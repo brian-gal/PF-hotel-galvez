@@ -3,3 +3,11 @@
     margin: 0;
     padding: 0;
 }
+
+/* restaura a 0 valores de boostrap con respecto al carrusel de fotos */
+.carousel-caption {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+}

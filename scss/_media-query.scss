@@ -1,0 +1,42 @@
+/*----------------------media query---------------------- */
+
+/* tablet */
+@media only screen and (max-width: 780px) {
+
+    /* achica el padding que le daba a todas las paginas menos a index */
+    .padding {
+        padding: 10px 1%;
+    }
+
+    .habitaciones-lista {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* achica el padding de los botones de index */
+    .botom-estilo a {
+        padding: 5px;
+    }
+    
+}
+
+/* celular */
+@media only screen and (max-width: 480px) {
+
+    .boton-estilo {
+        padding: 5px;
+    }
+
+    /* saca los margenes del parrafo de la pagina index */
+    .introduccion-info {
+        margin: 30px 0 20px;
+    }
+
+    /* Cambia el orden de la clase direccion para que aparezca después de redes sociales*/
+    .direccion {
+        order: 3;
+        margin-top: 10px;
+    }
+
+}

@@ -1,0 +1,58 @@
+/*----------------------FOOTER----------------------*/
+
+footer {
+    text-align: center;
+    height: 100%;
+    background-color: $color-fondo;
+    padding-top: 10px;
+}
+
+.hotel-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hotel-info-subtitulo {
+    color: $color-subtitulo;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+/* le da color a las estrellas */
+.hotel-info-estrellas {
+    color: $color-estrellas;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+/* le da estilo a la direccion */
+.direccion {
+    color: $color-subtitulo;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* le da estilo a la parte de iconos de redes sociales*/
+.redes-sociales {
+    margin-top: 10px;
+
+    a i {
+        font-size: 30px;
+        margin: 0.8rem;
+        color: $color-redes-sociales;
+        ;
+    }
+}
+
+/* le da estilo al fondo y al parrafo de creador */
+.hotel-info-creador {
+    padding: 10px;
+
+    p {
+        color: $color-creador;
+        font-size: 16px;
+        margin: 0;
+    }
+}
+
