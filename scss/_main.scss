@@ -74,6 +74,7 @@ main {
 
 /* le da estilo al formulario de reserva de la pagina habitaciones y de contacto*/
 .reservar {
+    @include flex-colum;
     text-align: center;
     background-color: $color-fondo-reservar;
     border-radius: 10px;

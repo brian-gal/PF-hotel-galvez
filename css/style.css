@@ -93,13 +93,13 @@ main {
   padding: 8px;
   font-size: clamp(15px, 3vw, 20px);
   text-decoration: none;
-  background-color: #808080;
-  box-shadow: 4px 6px 10px 0em #494949;
+  background-color: #8C7853;
+  box-shadow: 4px 6px 10px 0em #635146;
   color: #ffffff;
   border-radius: 5px;
 }
 .boton-estilo:hover {
-  background-color: #5a5a5a;
+  background-color: #5A4A41;
 }
 
 .introduccion-info {
@@ -119,6 +119,8 @@ main {
 
 /* le da estilo al formulario de reserva de la pagina habitaciones y de contacto*/
 .reservar {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   background-color: #B5A88A;
   border-radius: 10px;
@@ -172,7 +174,7 @@ main {
   cursor: pointer;
 }
 .reservar-enviar input:hover {
-  background-color: #4a2c1b;
+  background-color: #7c5640;
 }
 
 /* estilo a todos los h1 menos el del index */
