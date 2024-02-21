@@ -78,11 +78,9 @@ main {
 .portada-info {
   background-color: rgba(0, 0, 0, 0.7176470588);
   padding: 1%;
+  color: #fff;
 }
-.portada-info h1 {
-  font-size: clamp(15px, 3vw, 65px);
-}
-.portada-info h2 {
+.portada-info h1, .portada-info h2 {
   font-size: clamp(15px, 3vw, 65px);
 }
 .portada-info p {
@@ -121,9 +119,6 @@ main {
 
 /* le da estilo al formulario de reserva de la pagina habitaciones y de contacto*/
 .reservar {
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: center;
   text-align: center;
   background-color: #B5A88A;
   border-radius: 10px;
@@ -172,7 +167,7 @@ main {
 /* le da estilo a el boton de formulario reserva y de contacto */
 .reservar-enviar input {
   background-color: #4a3f1b;
-  color: white;
+  color: #ffffff;
   font-weight: bold;
   cursor: pointer;
 }
@@ -186,6 +181,7 @@ main {
 }
 .titulo h1 {
   display: inline-flex;
+  color: #000000;
   border-bottom: 3px solid #B5A88A;
   margin-top: 10px;
 }
@@ -193,8 +189,8 @@ main {
 /* acomoda como se ve la parte de la pagina habitaciones */
 .habitaciones {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
   margin: 10px 0;
 }
 .habitaciones article {
@@ -354,6 +350,10 @@ footer {
   height: 100%;
   background-color: #B5A88A;
   padding-top: 10px;
+}
+
+body {
+  background-color: #B5A88A;
 }
 
 .hotel-info {

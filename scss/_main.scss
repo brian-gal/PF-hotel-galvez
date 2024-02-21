@@ -1,7 +1,7 @@
 /*----------------------MAIN----------------------*/
 
 main {
-    background-color: #fff;
+    background-color: $color-fondo-main;
     padding-bottom: 20px;
 }
 
@@ -14,27 +14,24 @@ main {
 .flecha {
 
     span {
-        background-color: #0000006e;
+        background-color: $color-flecha-fondo;
         border-radius: 15px;
     }
 
     &:hover {
         .flecha-portada {
-            background-color: #000000d8;
+            background-color: $color-flecha-hover;
             border-radius: 15px;
         }
     }
 }
 
 .portada-info {
-    background-color: #000000b7;
+    background-color: $color-fondo-portada;
     padding: 1%;
+    color: $color-texto-portada;
 
-    h1 {
-        font-size: clamp(15px, 3vw, 65px);
-    }
-
-    h2 {
+    h1, h2 {
         font-size: clamp(15px, 3vw, 65px);
     }
 
@@ -49,13 +46,13 @@ main {
     padding: 8px;
     font-size: clamp(15px, 3vw, 20px);
     text-decoration: none;
-    background-color: #808080;
-    box-shadow: 4px 6px 10px 0em #494949;
+    background-color: $color-boton;
+    box-shadow: 4px 6px 10px 0em $color-boton-shadow;
     color: #ffffff;
     border-radius: 5px;
 
     &:hover {
-        background-color: #5a5a5a;
+        background-color: $color-hover-boton;
     }
 }
 
@@ -65,7 +62,7 @@ main {
 
     p {
         font-size: clamp(20px, 3vw, 25px);
-        color: #0d0d0d;
+        color: $color-texto-introduccion;
         margin-bottom: 30px;
     }
 }
@@ -77,14 +74,11 @@ main {
 
 /* le da estilo al formulario de reserva de la pagina habitaciones y de contacto*/
 .reservar {
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
     text-align: center;
-    background-color: #B5A88A;
+    background-color: $color-fondo-reservar;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 7px 9px 7px 0em #615053;
+    @include box-shadow;
 
     h2 {
         font-size: 24px;
@@ -100,8 +94,7 @@ main {
 }
 
 .reservar-flex {
-    display: flex;
-    flex-direction: column;
+    @include flex-colum;
 
     label {
         font-size: 20px;
@@ -124,20 +117,19 @@ main {
 
 /* acomoda el boton de enviar formulario de reserva*/
 .reservar-enviar.flex {
-    display: flex;
-    flex-direction: column;
+    @include flex-colum;
     justify-content: end;
 }
 
 /* le da estilo a el boton de formulario reserva y de contacto */
 .reservar-enviar input {
-    background-color: #4a3f1b;
-    color: white;
+    background-color: $color-fondo-boton-reservar;
+    color: $color-texto-boton-reservar;
     font-weight: bold;
     cursor: pointer;
 
     &:hover {
-        background-color: #4a2c1b;
+        background-color: $color-hover-boton-reservar;
     }
 }
 
@@ -147,27 +139,27 @@ main {
 
     h1 {
         display: inline-flex;
-        border-bottom: 3px solid #B5A88A;
+        color: $color-h1;
+        border-bottom: 3px solid $color-borde-h1;
         margin-top: 10px;
     }
 }
 
 /* acomoda como se ve la parte de la pagina habitaciones */
 .habitaciones {
-    display: flex;
+    @include flex-colum;
     align-items: center;
-    flex-direction: column;
     margin: 10px 0;
 
     article {
         display: inline-flex;
         justify-content: center;
-        border: 1px solid #868383;
-        background-color: #eeebe4;
+        border: 1px solid $color-borde-habitaciones;
+        background-color: $color-fondo-habitaciones;
         border-radius: 10px;
         margin: 1%;
         padding: 10px;
-        box-shadow: 7px 9px 7px 0em #615053;
+        @include box-shadow;
     }
 }
 
@@ -212,8 +204,7 @@ main {
 
 .servicios-lista,
 .servicios-imagen {
-    display: flex;
-    flex-direction: column;
+    @include flex-colum;
     align-items: center;
 }
 
@@ -235,8 +226,7 @@ main {
 
 /* le da estilo a la tabla de la pagina de tarifas */
 .tarifas {
-    display: flex;
-    flex-direction: column;
+    @include flex-colum;
     gap: 30px;
     padding: 0 20px 20px;
     margin: 20px;
@@ -251,14 +241,14 @@ main {
 
 .tarifas th,
 td {
-    border: 1px solid #333;
+    border: 1px solid $color-border-tarifas;
     padding: 8px;
     text-align: center;
     width: 33%;
 }
 
 .tarifas th {
-    background-color: #f2f2f2;
+    background-color: $color-fondo-tarifas;
 }
 
 .tarifas-info {
@@ -276,7 +266,7 @@ td {
 }
 
 .maps {
-    border: 2px solid #B5A88A;
+    border: 2px solid $color-borde-maps;
 }
 
 .maps,
@@ -286,30 +276,28 @@ td {
 }
 
 .contacto {
-    display: flex;
-    flex-direction: column;
+    @include flex-colum;
     margin-top: 20px;
     gap: 20px;
     max-width: 700px;
 }
 
 .contacto-info {
-    display: flex;
-    flex-direction: column;
+    @include flex-colum;
     margin-left: 10px;
 
     i {
         font-size: 25px;
-        color: #4a3f1b;
+        color: $color-icon-contacto;
 
         a {
             margin-left: 20px;
             text-decoration: none;
-            color: #454545;
+            color: $color-contacto;
             font-weight: normal;
         
             &:hover {
-                color: #0000ff;
+                color: $color-hover-contacto;
             }
         }
     }

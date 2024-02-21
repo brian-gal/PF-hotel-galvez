@@ -1,0 +1,9 @@
+@mixin flex-colum {
+    display: flex;
+    flex-direction: column;
+}
+
+//las propiedades de sombras
+@mixin box-shadow {
+    box-shadow: 7px 9px 7px 0em $color-shadow-habitaciones;
+}

@@ -1,20 +1,81 @@
 //-----------------HEADER------------
+
 //color al fondo de header y footer
 $color-fondo: #B5A88A;
+
 //color al titulo del nav al lado de la img
 $color-titulo-nav: #4f3c09;
+
 //color de los enlaces del nav
 $color-enlace: #000000;
 $color-enlace-hover: #4f3c09;
+
 //color del icono de hamburguesa
 $color-icono: #000000;
 $color-icono-fondo: #fff;
 
 //----------------MAIN--------------
 
+//color del fondo de main
+$color-fondo-main: #fff;
+
+//color de las flechas que cambian las fotos de index
+$color-flecha-hover: #000000d8;
+$color-flecha-fondo: #0000006e;
+
+//color de el texto sobre las imagenes y del fondo
+$color-fondo-portada: #000000b7;
+$color-texto-portada: #fff;
+
+//color de los dos botones de la pagina index
+$color-boton: #808080;
+$color-boton-shadow: #494949;
+$color-hover-boton: #5a5a5a;
+
+//color del texto de introduccion debajo de la portada
+$color-texto-introduccion: #0d0d0d;
+
+//color a la sombra en la pagina habitaciones
+$color-shadow-habitaciones: #615053;
+
+//color al fondo del recuadro de reserva de la pagina habitaciones
+$color-fondo-reservar: #B5A88A;
+
+//color al boton de enviar los formularios
+$color-fondo-boton-reservar: #4a3f1b;
+$color-texto-boton-reservar: #ffffff;
+$color-hover-boton-reservar: #4a2c1b;
+
+//color de todos los h1 menos el de la pagina index
+$color-h1: #000000;
+$color-borde-h1: #B5A88A;
+
+//color del recuadro que encierra cada tipo de habitacion
+$color-borde-habitaciones: #868383;
+$color-fondo-habitaciones: #eeebe4;
+
+//color de la tabla de tarifas
+$color-border-tarifas: #333;
+$color-fondo-tarifas: #f2f2f2;
+
+//color de los bordes del mapa
+$color-borde-maps: #B5A88A;
+
+//color de la informacion de contacto
+$color-icon-contacto: #4a3f1b;
+$color-contacto: #454545;
+$color-hover-contacto: #0000ff;
 
 //----------------FOOTER------------
+
+// le da color al texto del footer
 $color-subtitulo: #0d0d0d;
+
+// le da el color a las 4 estrellas
 $color-estrellas: #e07217;
+
+//le da color a los 2 iconos de redes sociales
 $color-redes-sociales: #3d46c4;
+
+// le da color al texto que dice el nombre del creador
 $color-creador: #010f5c;

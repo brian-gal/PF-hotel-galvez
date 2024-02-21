@@ -9,8 +9,7 @@
     }
 
     .habitaciones-lista {
-        display: flex;
-        flex-direction: column;
+        @include flex-colum;
         justify-content: center;
     }
 

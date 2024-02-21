@@ -7,9 +7,12 @@ footer {
     padding-top: 10px;
 }
 
+body {
+    background-color: $color-fondo;
+}
+
 .hotel-info {
-    display: flex;
-    flex-direction: column;
+    @include flex-colum;
     justify-content: center;
 }
 
@@ -55,4 +58,3 @@ footer {
         margin: 0;
     }
 }
-
