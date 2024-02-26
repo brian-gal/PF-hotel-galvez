@@ -19,7 +19,7 @@ main {
     }
 
     &:hover {
-        .flecha-portada {
+        span {
             background-color: $color-flecha-hover;
             border-radius: 15px;
         }
@@ -31,7 +31,8 @@ main {
     padding: 1%;
     color: $color-texto-portada;
 
-    h1, h2 {
+    h1,
+    h2 {
         font-size: clamp(15px, 3vw, 65px);
     }
 
@@ -104,16 +105,15 @@ main {
     select {
         height: 100%;
     }
-}
 
-.reservar-enviar input,
-.reservar-flex input,
-.reservar-flex select {
-    margin: 5px;
-    padding: 8px;
-    border: none;
-    border-radius: 5px;
-    width: 250px;
+    select,
+    input {
+        margin: 5px;
+        padding: 8px;
+        border: none;
+        border-radius: 5px;
+        width: 250px;
+    }
 }
 
 /* acomoda el boton de enviar formulario de reserva*/
@@ -123,14 +123,22 @@ main {
 }
 
 /* le da estilo a el boton de formulario reserva y de contacto */
-.reservar-enviar input {
-    background-color: $color-fondo-boton-reservar;
-    color: $color-texto-boton-reservar;
-    font-weight: bold;
-    cursor: pointer;
+.reservar-enviar {
 
-    &:hover {
-        background-color: $color-hover-boton-reservar;
+    input {
+        background-color: $color-fondo-boton-reservar;
+        color: $color-texto-boton-reservar;
+        font-weight: bold;
+        cursor: pointer;
+        margin: 5px;
+        padding: 8px;
+        border: none;
+        border-radius: 5px;
+        width: 250px;
+
+        &:hover {
+            background-color: $color-hover-boton-reservar;
+        }
     }
 }
 
@@ -184,12 +192,14 @@ main {
         margin: 10px 0;
     }
 
-    ul li {
-        font-size: 25px;
-        list-style: none;
+    ul {
+        li {
+            font-size: 25px;
+            list-style: none;
 
-        i {
-            margin-right: 10px;
+            i {
+                margin-right: 10px;
+            }
         }
     }
 }
@@ -198,8 +208,10 @@ main {
 .servicios-lista {
     gap: 20px;
 
-    ul li {
-        font-size: 20px;
+    ul {
+        li {
+            font-size: 20px;
+        }
     }
 }
 
@@ -209,9 +221,12 @@ main {
     align-items: center;
 }
 
-.servicios-imagen img {
-    width: 300px;
-    margin: 20px;
+.servicios-imagen {
+
+    img {
+        width: 300px;
+        margin: 20px;
+    }
 }
 
 .servicios-ayuda {
@@ -237,19 +252,22 @@ main {
         margin: 10px 0;
         text-align: center;
     }
-    
+
 }
 
-.tarifas th,
-td {
-    border: 1px solid $color-border-tarifas;
-    padding: 8px;
-    text-align: center;
-    width: 33%;
-}
+.tarifas {
 
-.tarifas th {
-    background-color: $color-fondo-tarifas;
+    th,
+    td {
+        border: 1px solid $color-border-tarifas;
+        padding: 8px;
+        text-align: center;
+        width: 33%;
+    }
+
+    th {
+        background-color: $color-fondo-tarifas;
+    }
 }
 
 .tarifas-info {
@@ -268,12 +286,11 @@ td {
 
 .maps {
     border: 2px solid $color-borde-maps;
-}
+    @include sizes(100%, 100%);
 
-.maps,
-.maps iframe {
-    width: 100%;
-    height: 100%;
+    iframe {
+        @include sizes(100%, 100%);
+    }
 }
 
 .contacto {
@@ -291,12 +308,16 @@ td {
         font-size: 25px;
         color: $color-icon-contacto;
 
+        &:hover {
+            color: $color-hover-contacto;
+        }
+
         a {
             margin-left: 20px;
             text-decoration: none;
             color: $color-contacto;
             font-weight: normal;
-        
+
             &:hover {
                 color: $color-hover-contacto;
             }
@@ -304,10 +325,13 @@ td {
     }
 }
 
-.contacto-formulario input,
-.contacto-formulario textarea {
-    margin: 5px;
-    padding: 8px;
-    border: none;
-    border-radius: 5px;
+.contacto-formulario {
+
+    textarea,
+    input {
+        margin: 5px;
+        padding: 8px;
+        border: none;
+        border-radius: 5px;
+    }
 }

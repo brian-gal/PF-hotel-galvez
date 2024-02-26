@@ -14,6 +14,11 @@
 }
 
 /*----------------------HEADER----------------------*/
+/* le da color al body en caso de que la informacion no llene el alto completo de la pagina */
+body {
+  background-color: #B5A88A;
+}
+
 /* fija el header y le da prioridad sobre todo */
 header {
   position: sticky;
@@ -70,7 +75,7 @@ main {
   background-color: rgba(0, 0, 0, 0.431372549);
   border-radius: 15px;
 }
-.flecha:hover .flecha-portada {
+.flecha:hover span {
   background-color: rgba(0, 0, 0, 0.8470588235);
   border-radius: 15px;
 }
@@ -80,7 +85,8 @@ main {
   padding: 1%;
   color: #fff;
 }
-.portada-info h1, .portada-info h2 {
+.portada-info h1,
+.portada-info h2 {
   font-size: clamp(15px, 3vw, 65px);
 }
 .portada-info p {
@@ -148,10 +154,8 @@ main {
 .reservar-flex select {
   height: 100%;
 }
-
-.reservar-enviar input,
-.reservar-flex input,
-.reservar-flex select {
+.reservar-flex select,
+.reservar-flex input {
   margin: 5px;
   padding: 8px;
   border: none;
@@ -172,6 +176,11 @@ main {
   color: #ffffff;
   font-weight: bold;
   cursor: pointer;
+  margin: 5px;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  width: 250px;
 }
 .reservar-enviar input:hover {
   background-color: #7c5640;
@@ -276,13 +285,12 @@ main {
 }
 
 .tarifas th,
-td {
+.tarifas td {
   border: 1px solid #333;
   padding: 8px;
   text-align: center;
   width: 33%;
 }
-
 .tarifas th {
   background-color: #f2f2f2;
 }
@@ -303,12 +311,12 @@ td {
 
 .maps {
   border: 2px solid #B5A88A;
-}
-
-.maps,
-.maps iframe {
-  width: 100%;
   height: 100%;
+  width: 100%;
+}
+.maps iframe {
+  height: 100%;
+  width: 100%;
 }
 
 .contacto {
@@ -328,6 +336,9 @@ td {
   font-size: 25px;
   color: #4a3f1b;
 }
+.contacto-info i:hover {
+  color: #0000ff;
+}
 .contacto-info i a {
   margin-left: 20px;
   text-decoration: none;
@@ -338,8 +349,8 @@ td {
   color: #0000ff;
 }
 
-.contacto-formulario input,
-.contacto-formulario textarea {
+.contacto-formulario textarea,
+.contacto-formulario input {
   margin: 5px;
   padding: 8px;
   border: none;
@@ -352,10 +363,6 @@ footer {
   height: 100%;
   background-color: #B5A88A;
   padding-top: 10px;
-}
-
-body {
-  background-color: #B5A88A;
 }
 
 .hotel-info {

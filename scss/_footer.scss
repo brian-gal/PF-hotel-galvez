@@ -7,10 +7,6 @@ footer {
     padding-top: 10px;
 }
 
-body {
-    background-color: $color-fondo;
-}
-
 .hotel-info {
     @include flex-colum;
     justify-content: center;
@@ -40,11 +36,13 @@ body {
 .redes-sociales {
     margin-top: 10px;
 
-    a i {
-        font-size: 30px;
-        margin: 0.8rem;
-        color: $color-redes-sociales;
-        ;
+    a {
+        i {
+            font-size: 30px;
+            margin: 0.8rem;
+            color: $color-redes-sociales;
+            ;
+        }
     }
 }
 
