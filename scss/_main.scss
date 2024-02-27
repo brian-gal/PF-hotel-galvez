@@ -79,6 +79,7 @@ main {
     text-align: center;
     background-color: $color-fondo-reservar;
     border-radius: 10px;
+    margin-bottom: 20px;
     padding: 20px;
     @include box-shadow;
 
@@ -158,7 +159,8 @@ main {
 .habitaciones {
     @include flex-colum;
     align-items: center;
-    margin: 10px 0;
+    margin: 10px;
+    gap: 30px;
 
     article {
         display: inline-flex;
@@ -167,7 +169,6 @@ main {
         background-color: $color-fondo-habitaciones;
         border-radius: 10px;
         margin: 1%;
-        padding: 10px;
         @include box-shadow;
     }
 }
@@ -307,10 +308,6 @@ main {
     i {
         font-size: 25px;
         color: $color-icon-contacto;
-
-        &:hover {
-            color: $color-hover-contacto;
-        }
 
         a {
             margin-left: 20px;

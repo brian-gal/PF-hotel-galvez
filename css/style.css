@@ -130,6 +130,7 @@ main {
   text-align: center;
   background-color: #B5A88A;
   border-radius: 10px;
+  margin-bottom: 20px;
   padding: 20px;
   box-shadow: 7px 9px 7px 0em #615053;
 }
@@ -202,7 +203,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px 0;
+  margin: 10px;
+  gap: 30px;
 }
 .habitaciones article {
   display: inline-flex;
@@ -211,7 +213,6 @@ main {
   background-color: #eeebe4;
   border-radius: 10px;
   margin: 1%;
-  padding: 10px;
   box-shadow: 7px 9px 7px 0em #615053;
 }
 
@@ -335,9 +336,6 @@ main {
 .contacto-info i {
   font-size: 25px;
   color: #4a3f1b;
-}
-.contacto-info i:hover {
-  color: #0000ff;
 }
 .contacto-info i a {
   margin-left: 20px;
