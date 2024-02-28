@@ -1,13 +1,15 @@
+// mixin para flex 
 @mixin flex-colum {
     display: flex;
     flex-direction: column;
 }
 
-//las propiedades de sombras
+// mixin para las propiedades de las sombras 
 @mixin box-shadow {
     box-shadow: 7px 9px 7px 0em $color-shadow-habitaciones;
 }
 
+// mixin para los tamaños ancho y alto 
 @mixin sizes($width, $height) {
     height: $height;
     width: $width;

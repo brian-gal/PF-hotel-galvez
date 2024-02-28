@@ -27,9 +27,9 @@ header {
   background-color: #B5A88A;
 }
 
-/* le da tamaño al logo de header y de footer*/
+/* le da tamaño al logo de header */
 .logo {
-  width: 120px;
+  width: 80px;
   margin-right: 10px;
 }
 
@@ -39,6 +39,7 @@ header {
   margin-bottom: 0;
   text-align: center;
   font-size: 20px;
+  line-height: 20px;
 }
 
 /* le da estilo a los enlaces del nav */
@@ -196,8 +197,21 @@ main {
   color: #000000;
   border-bottom: 3px solid #B5A88A;
   margin-top: 10px;
+  animation-name: titulo-animacion;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
 }
 
+@keyframes titulo-animacion {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 /* acomoda como se ve la parte de la pagina habitaciones */
 .habitaciones {
   display: flex;
@@ -216,6 +230,36 @@ main {
   box-shadow: 7px 9px 7px 0em #615053;
 }
 
+.animacion-left {
+  animation-name: animacion-left;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes animacion-left {
+  from {
+    opacity: 1;
+    transform: translateX(-1000px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.animacion-right {
+  animation-name: animacion-right;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes animacion-right {
+  from {
+    opacity: 1;
+    transform: translateX(1000px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
 /* tamaño y estilo a las imagenes de la pagina habitaciones */
 .habitaciones-imagen {
   display: flex;
@@ -231,7 +275,7 @@ main {
 .habitaciones-lista p {
   text-align: center;
   font-size: 30px;
-  margin: 10px 0;
+  margin: 3px;
 }
 .habitaciones-lista ul li {
   font-size: 25px;
@@ -259,8 +303,21 @@ main {
 .servicios-imagen img {
   width: 300px;
   margin: 20px;
+  animation-name: img-servicios-animacion;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
 }
 
+@keyframes img-servicios-animacion {
+  from {
+    opacity: 0;
+    transform: translateX(500px) scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
 .servicios-ayuda {
   display: inline-flex;
   text-align: center;
@@ -291,11 +348,23 @@ main {
   padding: 8px;
   text-align: center;
   width: 33%;
+  animation-name: tarifas-tabla-animacion;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
 }
 .tarifas th {
   background-color: #f2f2f2;
 }
 
+@keyframes tarifas-tabla-animacion {
+  from {
+    opacity: 1;
+    transform: translateY(1000px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
 .tarifas-info {
   font-size: 18px;
 }
@@ -338,7 +407,7 @@ main {
   color: #4a3f1b;
 }
 .contacto-info i a {
-  margin-left: 20px;
+  margin-left: 10px;
   text-decoration: none;
   color: #454545;
   font-weight: normal;
@@ -361,6 +430,12 @@ footer {
   height: 100%;
   background-color: #B5A88A;
   padding-top: 10px;
+}
+
+/* le da tamaño al logo de footer */
+.logo-footer {
+  width: 120px;
+  margin-right: 10px;
 }
 
 .hotel-info {
@@ -393,10 +468,23 @@ footer {
 .redes-sociales {
   margin-top: 10px;
 }
-.redes-sociales a i {
+
+.bi-instagram {
+  color: #3f729b;
   font-size: 30px;
   margin: 0.8rem;
-  color: #3d46c4;
+}
+
+.bi-facebook {
+  color: #3b5998;
+  font-size: 30px;
+  margin: 0.8rem;
+}
+
+.bi-twitter-x {
+  color: #000000;
+  font-size: 30px;
+  margin: 0.8rem;
 }
 
 /* le da estilo al fondo y al parrafo de creador */

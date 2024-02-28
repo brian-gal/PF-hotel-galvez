@@ -152,6 +152,21 @@ main {
         color: $color-h1;
         border-bottom: 3px solid $color-borde-h1;
         margin-top: 10px;
+        animation-name: titulo-animacion;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+    }
+}
+
+@keyframes titulo-animacion {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
     }
 }
 
@@ -173,6 +188,40 @@ main {
     }
 }
 
+.animacion-left {
+    animation-name: animacion-left;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes animacion-left {
+    from {
+        opacity: 1;
+        transform: translateX(-1000px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.animacion-right {
+    animation-name: animacion-right;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes animacion-right {
+    from {
+        opacity: 1;
+        transform: translateX(1000px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
 /* tamaño y estilo a las imagenes de la pagina habitaciones */
 .habitaciones-imagen {
     display: flex;
@@ -190,7 +239,7 @@ main {
     p {
         text-align: center;
         font-size: 30px;
-        margin: 10px 0;
+        margin: 3px;
     }
 
     ul {
@@ -227,6 +276,21 @@ main {
     img {
         width: 300px;
         margin: 20px;
+        animation-name: img-servicios-animacion;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+    }
+}
+
+@keyframes img-servicios-animacion {
+    from {
+        opacity: 0;
+        transform: translateX(500px) scale(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0) scale(1);
     }
 }
 
@@ -253,7 +317,6 @@ main {
         margin: 10px 0;
         text-align: center;
     }
-
 }
 
 .tarifas {
@@ -264,10 +327,24 @@ main {
         padding: 8px;
         text-align: center;
         width: 33%;
+        animation-name: tarifas-tabla-animacion;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
     }
 
     th {
         background-color: $color-fondo-tarifas;
+    }
+}
+
+@keyframes tarifas-tabla-animacion {
+    from {
+        opacity: 1;
+        transform: translateY(1000px);
+    }
+
+    to {
+        transform: translateX(0);
     }
 }
 
@@ -310,7 +387,7 @@ main {
         color: $color-icon-contacto;
 
         a {
-            margin-left: 20px;
+            margin-left: 10px;
             text-decoration: none;
             color: $color-contacto;
             font-weight: normal;

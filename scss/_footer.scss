@@ -7,6 +7,12 @@ footer {
     padding-top: 10px;
 }
 
+/* le da tamaño al logo de footer */
+.logo-footer {
+    width: 120px;
+    margin-right: 10px;
+}
+
 .hotel-info {
     @include flex-colum;
     justify-content: center;
@@ -35,14 +41,20 @@ footer {
 /* le da estilo a la parte de iconos de redes sociales*/
 .redes-sociales {
     margin-top: 10px;
+}
 
-    a {
-        i {
-            font-size: 30px;
-            margin: 0.8rem;
-            color: $color-redes-sociales;
-            ;
-        }
+// maps
+$color-redes-sociales: (
+    instagram: #3f729b,
+    facebook: #3b5998,
+    twitter-x: #000000
+);
+
+@each $redes, $color in $color-redes-sociales {
+    .bi-#{$redes} {
+        color: $color;
+        font-size: 30px;
+        margin: 0.8rem;
     }
 }
 

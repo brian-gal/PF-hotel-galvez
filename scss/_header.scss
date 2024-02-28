@@ -12,9 +12,9 @@ header {
     background-color: $color-fondo;
 }
 
-/* le da tamaño al logo de header y de footer*/
+/* le da tamaño al logo de header */
 .logo {
-    width: 120px;
+    width: 80px;
     margin-right: 10px;
 }
 
@@ -24,6 +24,7 @@ header {
     margin-bottom: 0;
     text-align: center;
     font-size: 20px;
+    line-height: 20px;
 }
 
 /* le da estilo a los enlaces del nav */
@@ -38,8 +39,6 @@ header {
             }
         }
     }
-
-    
 }
 
 /* color y tamaño al icono hamburguesa del nav mobile*/

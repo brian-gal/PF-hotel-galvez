@@ -15,6 +15,7 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="../css/style.css">
+
 </head>
 
 <body>
@@ -65,7 +66,8 @@
             <form action="form.php" method="POST">
                 <div class="reservar-flex">
                     <label for="reservas-email">Email:</label>
-                    <input type="email" name="reservas-email" id="reservas-email" placeholder="Ej: info@solysierrashotel.com">
+                    <input type="email" name="reservas-email" id="reservas-email"
+                        placeholder="Ej: info@solysierrashotel.com">
                 </div>
                 <!--opciones de habitaciones-->
                 <div class="reservar-flex">
@@ -106,14 +108,14 @@
                 </div>
             </form>
         </section>
-        
+
 
         <div class="titulo">
             <h1 id="habitaciones">HABITACIONES</h1>
         </div>
 
         <section class="container-fluid habitaciones">
-            <article class="row">
+            <article class="row animacion-left">
                 <div class="habitaciones-imagen col-sm-12 col-md-6">
                     <img src="../assets/habitacion-estandar.webp" alt="Habitacion Estandar">
                 </div>
@@ -132,7 +134,7 @@
                 </div>
             </article>
 
-            <article class="row">
+            <article class="row animacion-right">
                 <div class="habitaciones-imagen col-sm-12 col-md-6">
                     <img src="../assets/habitacion-superior.webp" alt="Habitacion Superior">
                 </div>
@@ -153,7 +155,7 @@
                 </div>
             </article>
 
-            <article class="row">
+            <article class="row animacion-left">
                 <div class="habitaciones-imagen col-sm-12 col-md-6">
                     <img src="../assets/habitacion-deluxe.webp" alt="Habitacion Deluxe">
                 </div>
@@ -189,16 +191,18 @@
             </section>
             <section class="col-sm-12 col-md-4">
                 <p class="direccion">Av. del Sol N°678, Merlo San Luis, argentina</p>
-                <img class="logo" src="../assets/logo.webp" alt="logo">
+                <img class="logo-footer" src="../assets/logo.webp" alt="logo">
             </section>
 
             <section class="col-sm-12 col-md-4 hotel-info">
-                <p class="hotel-info-subtitulo">Seguinos en nuestras redes</p>
+                <p class="hotel-info-subtitulo">Nuestras redes</p>
 
                 <!-- iconos de las redes sociales -->
                 <div class="redes-sociales">
                     <a target="_blank" href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
                     <a target="_blank" href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                    <a target="_blank" href="https://twitter.com/iniciarsesion?lang=es"><i
+                            class="bi bi-twitter-x"></i></a>
                 </div>
             </section>
         </div>
@@ -215,6 +219,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>
