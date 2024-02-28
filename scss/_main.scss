@@ -123,6 +123,12 @@ main {
     justify-content: end;
 }
 
+.reservar-enviar.especial {
+    input {
+        width: 150px;
+    }
+}
+
 /* le da estilo a el boton de formulario reserva y de contacto */
 .reservar-enviar {
 
@@ -141,6 +147,8 @@ main {
             background-color: $color-hover-boton-reservar;
         }
     }
+
+
 }
 
 /* estilo a todos los h1 menos el del index */
@@ -174,7 +182,6 @@ main {
 .habitaciones {
     @include flex-colum;
     align-items: center;
-    margin: 10px;
     gap: 30px;
 
     article {
@@ -190,7 +197,7 @@ main {
 
 .animacion-left {
     animation-name: animacion-left;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-iteration-count: 1;
 }
 
@@ -207,7 +214,7 @@ main {
 
 .animacion-right {
     animation-name: animacion-right;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-iteration-count: 1;
 }
 
@@ -285,7 +292,8 @@ main {
 @keyframes img-servicios-animacion {
     from {
         opacity: 0;
-        transform: translateX(500px) scale(0);
+
+        transform: translateX(500px) scale(0) rotate(360deg);
     }
 
     to {
@@ -383,7 +391,7 @@ main {
     margin-left: 10px;
 
     i {
-        font-size: 25px;
+        font-size: clamp(20px, 5vw, 25px);
         color: $color-icon-contacto;
 
         a {
@@ -391,6 +399,7 @@ main {
             text-decoration: none;
             color: $color-contacto;
             font-weight: normal;
+            font-size: clamp(15px, 5vw, 25px);
 
             &:hover {
                 color: $color-hover-contacto;

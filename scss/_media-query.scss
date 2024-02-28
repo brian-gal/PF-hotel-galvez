@@ -8,9 +8,23 @@
         padding: 10px 1%;
     }
 
+    .logo {
+        margin-right: 0;
+    }
+
     .habitaciones-lista {
         @include flex-colum;
         justify-content: center;
+    }
+
+    .reservar {
+        box-shadow: 0px 11px 7px 0em $color-shadow-habitaciones;
+    }
+
+    .habitaciones {
+        article {
+            box-shadow: 0px 5px 7px 3px $color-shadow-habitaciones;
+        }
     }
 
     /* achica el padding de los botones de index */
@@ -19,6 +33,14 @@
         a {
             padding: 5px;
         }
+    }
+
+    .habitaciones-imagen {
+        padding-top: 12px;
+    }
+
+    .contacto {
+        padding: 5px;
     }
 }
 
