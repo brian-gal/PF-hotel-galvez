@@ -32,10 +32,10 @@ header {
     li {
         a {
             font-size: 20px;
-            color: $color-enlace;
+            color: $color-texto;
 
             &:hover {
-                color: $color-enlace-hover;
+                color: $color-titulo-nav;
             }
         }
     }
@@ -43,10 +43,10 @@ header {
 
 /* color y tamaño al icono hamburguesa del nav mobile*/
 .icon-nav {
-    background-color: $color-icono-fondo;
+    background-color: $color-fondo-main;
 
     span {
-        color: $color-icono;
+        color: $color-texto;
         font-size: 30px;
     }
 }

@@ -29,7 +29,7 @@ main {
 .portada-info {
     background-color: $color-fondo-portada;
     padding: 1%;
-    color: $color-texto-portada;
+    color: $color-fondo-main;
 
     h1,
     h2 {
@@ -63,7 +63,7 @@ main {
 
     p {
         font-size: clamp(20px, 3vw, 25px);
-        color: $color-texto-introduccion;
+        color: $color-texto;
         margin-bottom: 30px;
     }
 }
@@ -77,7 +77,7 @@ main {
 .reservar {
     @include flex-colum;
     text-align: center;
-    background-color: $color-fondo-reservar;
+    background-color: $color-fondo;
     border-radius: 10px;
     margin-bottom: 20px;
     padding: 20px;
@@ -134,7 +134,7 @@ main {
 
     input {
         background-color: $color-fondo-boton-reservar;
-        color: $color-texto-boton-reservar;
+        color: $color-fondo-main;
         font-weight: bold;
         cursor: pointer;
         margin: 5px;
@@ -157,8 +157,8 @@ main {
 
     h1 {
         display: inline-flex;
-        color: $color-h1;
-        border-bottom: 3px solid $color-borde-h1;
+        color: $color-texto;
+        border-bottom: 3px solid $color-fondo;
         margin-top: 10px;
         animation-name: titulo-animacion;
         animation-duration: 2s;
@@ -320,7 +320,7 @@ main {
     padding: 0 20px 20px;
     margin: 20px;
 
-    p {
+    h2 {
         font-size: 20px;
         margin: 10px 0;
         text-align: center;
@@ -371,7 +371,7 @@ main {
 }
 
 .maps {
-    border: 2px solid $color-borde-maps;
+    border: 2px solid $color-fondo;
     @include sizes(100%, 100%);
 
     iframe {
