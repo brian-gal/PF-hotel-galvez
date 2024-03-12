@@ -5,42 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - Hotel Sol y Sierras</title>
-
     <!-- meta description -->
     <meta name="description"
         content="Contacta al Hotel Sol y Sierras en Merlo, San Luis, a través de teléfono 02656-473647, WhatsApp o correo electrónico. ¡Reserva ahora y disfruta de nuestras instalaciones y servicios de calidad!">
-
     <!-- meta palabras claves -->
     <meta name="keywords"
         content="hotel, sol y sierras, contacto, ubicación, teléfono, WhatsApp, correo electrónico, reserva, Merlo, San Luis, Argentina">
-
     <!-- boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
     <!-- boostrap iconos -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
     <!--CSS-->
     <link rel="stylesheet" href="../css/style.css">
+    <!-- icono del sitio web -->
+    <link rel="shortcut icon" href="../assets/logoweb.ico" type="image/x-icon">
 </head>
 
 <body>
-
     <!------------------------HEADER------------------------>
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-
                 <img class="logo" src="../assets/logo.webp" alt="logo">
                 <p class="color-titulo-nav font-negrita">Hotel <br> Sol y Sierras</p>
-
                 <button class="navbar-toggler icon-nav" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span><i class="bi bi-list"></i></span>
                 </button>
-
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav nav-underline texto-nav">
                         <li class="nav-item">
@@ -66,11 +59,9 @@
 
     <!------------------------MAIN------------------------>
     <main class="padding">
-
         <div class="titulo">
             <h1>CONTACTO Y UBICACION</h1>
         </div>
-        
         <div class="container-fluid">
             <div class="row justify-content-evenly">
                 <section class="col-sm-12 col-md-6 contacto direccion-maps">
@@ -82,37 +73,33 @@
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </section>
-
                 <section class="col-sm-12 col-md-6 contacto">
                     <div class="contacto-info">
                         <i class="bi bi-telephone"><a href="tel: 02656473647">02656-473647</a></i>
                         <i class="bi bi-whatsapp"><a href="tel: 2665068922">2665068922</a></i>
                         <i class="bi bi-envelope"><a href="https://mail.google.com/">info@solysierrashotel.com</a></i>
                     </div>
-
-
                     <form class="reservar contacto-formulario" action="form.php" method="POST">
                         <label for="contacto-nombre">Nombre:</label>
                         <input type="text" name="contacto-nombre" id="contacto-nombre" placeholder="Ej: brian">
                         <label for="contacto-telefono">Telefono:</label>
                         <input type="tel" name="contacto-telefono" id="contacto-telefono" placeholder="Ej: 2665049030">
                         <label for="contacto-email">Email:</label>
-                        <input type="email" name="contacto-email" id="contacto-email" placeholder="Ej: info@solysierrashotel.com">
+                        <input type="email" name="contacto-email" id="contacto-email"
+                            placeholder="Ej: info@solysierrashotel.com">
                         <label for="contacto-mensaje">Mensaje:</label>
-                        <textarea name="contacto-mensaje" id="contacto-mensaje" cols="30" rows="10" placeholder="Escriba su consulta aquí..."></textarea>
+                        <textarea name="contacto-mensaje" id="contacto-mensaje" cols="30" rows="10"
+                            placeholder="Escriba su consulta aquí..."></textarea>
                         <div class="reservar-enviar especial">
                             <input type="submit" value="Enviar Mensaje">
                         </div>
                     </form>
-                    
                 </section>
             </div>
         </div>
-
     </main>
 
     <!------------------------FOOTER------------------------>
-
     <footer class="container-fluid">
         <div class="row">
             <section class="col-sm-12 col-md-4 hotel-info">
@@ -123,15 +110,14 @@
                 <p class="direccion">Av. del Sol N°678, Merlo San Luis, argentina</p>
                 <img class="logo-footer" src="../assets/logo.webp" alt="logo">
             </section>
-
             <section class="col-sm-12 col-md-4 hotel-info">
                 <p class="hotel-info-subtitulo">Nuestras redes</p>
-
                 <!-- iconos de las redes sociales -->
                 <div class="redes-sociales">
                     <a target="_blank" href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
                     <a target="_blank" href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
-                    <a target="_blank" href="https://twitter.com/iniciarsesion?lang=es"><i class="bi bi-twitter-x"></i></a>
+                    <a target="_blank" href="https://twitter.com/iniciarsesion?lang=es"><i
+                            class="bi bi-twitter-x"></i></a>
                 </div>
             </section>
         </div>
